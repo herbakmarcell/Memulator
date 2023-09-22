@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5833F346-F1D2-4642-B44A-FE378C5A367E}</ProjectGuid>
+    <ProjectGuid>{E1C112FA-AE9E-4D5F-816F-C2F889871B3D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Memulator_Main</RootNamespace>
-    <AssemblyName>Memulator_Main</AssemblyName>
+    <AssemblyName>Memulator-Main</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
