@@ -33,3 +33,15 @@ A számológépünk nem sokkal különbözik az alapmodelltől, műveletei tarta
 
 Egy olyan szoftver, amely alkalmas a szórakoztató, optimális tanulásra, munkavégzésre. Használata közben a szoftver képes hangok lejátszására, képek
 megjelenítésére.
+
+## 6. Követelménylista
+
+| ID  | Név | Kifejtés |
+| ------------- | ------------- | ------------- |
+| 1  | Összeadás  | Számok összeadása. |
+| 2  | Kivonás  | Számok kivonása. |
+| 3  | Szorzás  | Számok szorzása. |
+| 4  | Osztás  | Számok osztása. |
+| 5  | Gyökvonás | Számok gyökei. |
+| 6  | Törlés  | Törlés a képernyőről |
+| 7  | Nullázás | Az összes szám törlése a képernyőről |
