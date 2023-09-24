@@ -21,3 +21,8 @@ A számológépünk nem sokkal különbözik az alapmodelltől, műveletei tarta
 -   Négyzetre emelés
 - 	Kijelzőn lévő adatok törlése
 
+## 4. Igényelt üzleti folyamatok modellje
+
+Egy olyan szoftver, amely alkalmas a szórakoztató, optimális tanulásra, munkavégzésre. Használata közben a szoftver képes hangok lejátszására, képek
+megjelenítésére.
+
