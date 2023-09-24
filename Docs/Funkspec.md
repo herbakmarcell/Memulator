@@ -37,3 +37,8 @@ megjelenítésére.
 | 5  | Gyökvonás | Számok gyökei. |
 | 6  | Törlés  | Törlés a képernyőről |
 | 7  | Nullázás | Az összes szám törlése a képernyőről |
+
+## 6. Használati esetek
+
+1. Felhasználó számolása: A felhasználó a képernyőablakon megjelenő gombok segítségével ki tudja választani, hogy melyik matematikai műveletet szeretné elvégezni.
+2. Eredmény kiírása a képernyőre: A program a háttérben a felhasználó által meghívott matematikai műveletet végrehajtja.
