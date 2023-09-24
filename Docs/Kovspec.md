@@ -45,6 +45,7 @@ megjelenítésére.
 | 5  | Gyökvonás | Számok gyökei. |
 | 6  | Törlés  | Törlés a képernyőről |
 | 7  | Nullázás | Az összes szám törlése a képernyőről |
+| 8  | Eredmény | Az művelet eredményének kiíratása a képernyőre |
 
 ## 7. Fogalomtár
 
