@@ -54,3 +54,44 @@ megjelenítésére.
 6. A felhasználó rákattinthat a törlés (DEL) gombra. Ekkor a legutolsó karakter törlésre kerül a képrenyőről.
 7. A felhasználó rákattinthat a nullázás (AC) gombra. Ekkor az összes szám törlésre kerül a képernyőről.
 8. A felhasználó bármikor rákattinthat az eredmény (=) gombra. Ekkor az aktuális számolási folyamat eredményét kiírja a kijelzőre.
+
+## 8. Képernyőtervek
+
+Főablak:
+Beállítások:
+
+## 9. Forgatókönyvek
+
+A program elindítása után minden felhasználónak a főablak jelenik meg, melyben a következők jelennek meg:
+* számok megjelenitésére szolgáló szövegdoboz
+* felhasználó által bevihető számok gombjai
+  *  nulla (0)
+  *  egy (1)
+  *  kettő (2)
+  *  három (3)
+  *  négy (4)
+  *  öt (5)
+  *  hat (6)
+  *  hét (7)
+  *  nyolc (8)
+  *  kilenc (9)
+* műveleti jelek
+  * összeadás
+  * kivonás
+  * szorzás
+  * osztás
+  * gyökvonás
+  * egyenlőségjel
+* AC gomb
+* DEL gomb
+A szövegdobozban jelenik meg:
+* a felhasználó által megadott számok
+* az eredményként megjelenő számok
+
+A felhasználó kezdésképp meg tud adni egy számot, mely után egy műveleti jel megnyomásával jelezni tudja, hogy egy másik számot szeretne megadni. Ha a felhasználó ez után megnyomja bármely számot, az előzőleg megadott szám eltűnik, és az új szám jelenik meg a szövegdobozban. Ez addig folytatható míg egyenlőségjelet nem nyomunk, ekkor az előzőleg beírt számok műveleteinek eredménye jelenik meg. ilyenkor két lehetőségünk van, ha elkezdünk írni egy másik számot, az előző eredmény törlődik, hogyha pedig egy műveleti jelet nyomunk meg az eredményt elmenti, és hozzáveszi az új művelethez.
+
+Ha a felhasználó hibásan írta be a szám egyik karakterét, és korrigálni szeretné a hibáját, a DEL nevű gombal tudja megtenni, az itt előforduló lehetőségek:
+* Ha a szövegdoboz üres, és a felhasználó megnyomja a DEL elnevezéső gombot, a szövegdoboz tartalma változatlan marad, ez akkor fordulhat elő, hogyha az AC gombal törölve lett minden, vagy ha az alkalmazás frissen lett megnyitva, és még nem történt számbevitel a megnyílása óta.
+* Ha a szövegdoboz egy eredményt tartalmaz, amit az egyenlőségjel lenyomásas után ír ki, és a felhasználó megnyomja a DEL elnevezésű gombot, semmi nem történik, a szövegdoboz változatlan marad.
+
+
