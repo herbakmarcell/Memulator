@@ -50,7 +50,12 @@
     
 	5.1 Rendszerszereplők
    
-	5.2 Menühierachiák
+	### 5.2 Menü-hierarchia:
+* Interface:
+	- Kijelző megjelenítése mely a jelenlegi eredményt mutatja
+	- Gombok melyek a reláció beírásához szükségesek(Számok 0-9, operátorok)
+	- Gombok a program kezelésére(tálcára rakás, bezárás)
+	- Gomb a kijelző megjelenítésére
    
 8. Fizikai környezet
     
