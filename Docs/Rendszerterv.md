@@ -35,25 +35,34 @@
    
 	3.2 Üzleti folyamatok
    
-5. Követelmények
+## 5. Követelmények
+  ### Funkcionális
+    - Egyszerűbb matematikai műveletek elvégzése
+    - A folyamat alatt az eredmények tárolása
+    - Megakadályozni, hogy a felhasználó érvénytelen adatot adjon meg
+
+### Nem Funkcionális 
+	- Gyorsnak és átláthatónak kell lennie
+	- Úgy érezze a felhasználó mintha gyorsabb fejben vagy papíron való számolás helyett a műveletek megoldása.
+	- Úgy nézzen ki a program mintha nem 15 éve fejlesztették volna amikor csak szögletes kis windows programok voltak.
    
-6. Funkcionális terv
+7. Funkcionális terv
     
 	5.1 Rendszerszereplők
    
 	5.2 Menühierachiák
    
-7. Fizikai környezet
+8. Fizikai környezet
     
-8. Architekturális terv
+9. Architekturális terv
     
-9. Adatbázis terv
+10. Adatbázis terv
     
-10. Implementációs terv
+11. Implementációs terv
     
-11. Tesztterv
+12. Tesztterv
     
-12. Telepítési terv
+13. Telepítési terv
     
-13. Karbantartási terv
+14. Karbantartási terv
    
