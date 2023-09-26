@@ -71,5 +71,6 @@ Az alkalmazásunkhoz nincs szükség adatbázisra, azonban előfordulhat, hogy t
     
 13. Telepítési terv
     
-14. Karbantartási terv
-   
+## 14. Karbantartási terv
+
+Az alkalmazásnak nincs szüksége különösebb karbantartásra, új funkció hozzáadása esetén opcionális frissítést teszünk elérhetővé a felhasználó számára.
