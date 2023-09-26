@@ -61,8 +61,10 @@
     
 9. Architekturális terv
     
-10. Adatbázis terv
-    
+## 10. Adatbázis terv
+
+Az alkalmazásunkhoz nincs szükség adatbázisra, azonban előfordulhat, hogy tárolni kell helyi fájlokat, ebben az esetben a felhasználó számítógépén történik a tárolás.
+
 11. Implementációs terv
     
 12. Tesztterv
