@@ -41,13 +41,13 @@ A rendszer célja a manapság használt elavult számológép formátum felfriss
 
    
 ### 2.4 Mérföldkövek
-   	-   Prototípus prezentálása
+   *   Prototípus prezentálása
    
-3. Üzleti folyamatok modellje
+## 3. Üzleti folyamatok modellje
    
-	3.1 Üzleti szereplők
+### 3.1 Üzleti szereplők
    
-	3.2 Üzleti folyamatok
+### 3.2 Üzleti folyamatok
    
 ## 4. Követelmények
   ### Funkcionális
@@ -62,26 +62,26 @@ A rendszer célja a manapság használt elavult számológép formátum felfriss
   - Úgy érezze a felhasználó mintha gyorsabb fejben vagy papíron való számolás helyett a műveletek megoldása.
   - Úgy nézzen ki a program mintha nem 15 éve fejlesztették volna amikor csak szögletes kis windows programok voltak.
    
-5. Funkcionális terv
+## 5. Funkcionális terv
     
-	5.1 Rendszerszereplők
+### 5.1 Rendszerszereplők
    
-	### 5.2 Menü-hierarchia:
+### 5.2 Menü-hierarchia:
 * Interface:
 	- Kijelző megjelenítése mely a jelenlegi eredményt mutatja
 	- Gombok melyek a reláció beírásához szükségesek(Számok 0-9, operátorok)
 	- Gombok a program kezelésére(tálcára rakás, bezárás)
 	- Gomb a kijelző megjelenítésére
    
-6. Fizikai környezet
+## 6. Fizikai környezet
     
-7. Architekturális terv
+## 7. Architekturális terv
     
 ## 8. Adatbázis terv
 
 Az alkalmazásunkhoz nincs szükség adatbázisra, azonban előfordulhat, hogy tárolni kell helyi fájlokat, ebben az esetben a felhasználó számítógépén történik a tárolás.
 
-9. Implementációs terv
+## 9. Implementációs terv
     
 ## 10. Tesztterv
 
@@ -93,7 +93,7 @@ A minimum hardverkonfiguráció: Intel Celeron processzor, 4GB RAM, 128GB HDD, a
 A tesztelés során a szoftver megfelelő működését vizsgáljuk. Amennyiben az elvártnak megfelelő eredményt kapunk, a teszt eset sikeresnek tekinthető, ellenkező 
 esetben a hibát rögzítjük a teszt jegyzőkönyvben. Ezt követően a megtalált hibákat javítjuk a szoftverben, és újbóli tesztelésnek vetjük alá a rendszert.
 
-11. Telepítési terv
+## 11. Telepítési terv
     
 ## 12. Karbantartási terv
 
