@@ -64,6 +64,7 @@ Beállítások:
 
 A program elindítása után minden felhasználónak a főablak jelenik meg, melyben a következők jelennek meg:
 * számok megjelenitésére szolgáló szövegdoboz
+* tizedesvessző
 * felhasználó által bevihető számok gombjai
   *  nulla (0)
   *  egy (1)
@@ -84,14 +85,19 @@ A program elindítása után minden felhasználónak a főablak jelenik meg, mel
   * egyenlőségjel
 * AC gomb
 * DEL gomb
+* meme gomb
 A szövegdobozban jelenik meg:
 * a felhasználó által megadott számok
 * az eredményként megjelenő számok
 
-A felhasználó kezdésképp meg tud adni egy számot, mely után egy műveleti jel megnyomásával jelezni tudja, hogy egy másik számot szeretne megadni. Ha a felhasználó ez után megnyomja bármely számot, az előzőleg megadott szám eltűnik, és az új szám jelenik meg a szövegdobozban. Ez addig folytatható míg egyenlőségjelet nem nyomunk, ekkor az előzőleg beírt számok műveleteinek eredménye jelenik meg. ilyenkor két lehetőségünk van, ha elkezdünk írni egy másik számot, az előző eredmény törlődik, hogyha pedig egy műveleti jelet nyomunk meg az eredményt elmenti, és hozzáveszi az új művelethez.
+A felhasználó kezdésképp meg tud adni egy számot, mely után egy műveleti jel megnyomásával jelezni tudja, hogy egy másik számot szeretne megadni.
+Ha a felhasználó ez után megnyomja bármely számot, az előzőleg megadott szám eltűnik, és az új szám jelenik meg a szövegdobozban.
+Ez addig folytatható míg egyenlőségjelet nem nyomunk, ekkor az előzőleg beírt számok műveleteinek eredménye jelenik meg.
+ilyenkor két lehetőségünk van, ha elkezdünk írni egy másik számot, az előző eredmény törlődik, hogyha pedig egy műveleti jelet nyomunk meg az eredményt elmenti, és hozzáveszi az új művelethez.
 
 Ha a felhasználó hibásan írta be a szám egyik karakterét, és korrigálni szeretné a hibáját, a DEL nevű gombal tudja megtenni, az itt előforduló lehetőségek:
-* Ha a szövegdoboz üres, és a felhasználó megnyomja a DEL elnevezésű gombot, a szövegdoboz tartalma változatlan marad. Ez akkor fordulhat elő, hogyha az AC gombal törölve lett minden, vagy ha az alkalmazás frissen lett megnyitva, és még nem történt számbevitel a megnyílása óta.
+* Ha a szövegdoboz üres, és a felhasználó megnyomja a DEL elnevezésű gombot, a szövegdoboz tartalma változatlan marad. Ez akkor fordulhat elő, hogyha az AC gombal törölve lett minden,
+   vagy ha az alkalmazás frissen lett megnyitva, és még nem történt számbevitel a megnyílása óta.
 * Ha a szövegdoboz egy eredményt tartalmaz, amit az egyenlőségjel lenyomásas után ír ki, és a felhasználó megnyomja a DEL elnevezésű gombot, semmi nem történik, a szövegdoboz változatlan marad.
 * Ha a szövegdoboz egy felhasználó által beírt számot tartalmaz, és megnyomja a felhasználó a DEL elnevezésű gombot, két lehetőség fordulhat elő:
   * Ha a szövegdobozban egy karakter van, és megnyomja a felhasználó a DEL elnevezésű gombot, a szövegdoboz üressé válik.
@@ -100,5 +106,27 @@ Ha a felhasználó hibásan írta be a szám egyik karakterét, és korrigálni 
  Ha a felhasználó teljesen új számolást szeretne kezdeni, azt az AC elnevezésű gombal tudja megtenni. Megnyomása után két lehetőség fordulhat elő:
  * Ha a szövegdoboz üres, és a felhasználó megnyomja az AC elnevezésű gombot, semmi sem történik, a szövegdoboz és a memória üres marad.
  * Ha a szövegdobozban eredmény, vagy a felhasználó által beírt szám jelenik meg, és a felhasználó megnyomja az AC elnevezésű gombot, a szövegdoboz és a számolási memória üressé válik.
+
+Ha a felhasználó a műveleti jelek valamelyikét használja, az előforduló lehetőségek:
+* Ha a szövegdoboz üres, nem lett még megadva szám, és egy műveleti jel megnyomásra került,  akkor nem kerül regisztrálásra a gomb lenyomása, nem változik semmi.
+* Ha a szövegdoboz tartalmaz egy, a felhasználó által megadott számot, és egy műveleti jel megnyomásra került, a szövedgoboz tartalma változatlan marad,
+  viszont a számhoz a háttérben a műveleti jel regisztrálásra került, ha a felhasználó megnyom egy számot, az előző szám eltűnik és az új jelenik meg.
+
+  Ha a felhasználó megnyomja a meme gombot, az előforduló lehetőségek:
+  * Ha a meme gomb piros, és a felhasználó megnyomja a meme elnevezésű gombot, akkor a gomb zöldé válik, az értéke pedig igaz lesz.
+   * Ha a meme gomb értéke igaz, a számológép használata során különböző különleges számokra hang, illetve képi hatásokat jelenít meg a program.
+  * Ha a meme gomb zöld, és a felhasználó megnyomja a meme elnevezésű gombot, akkor a gomb pirossá válik, az értéke pedig hamis lesz.
+     * Ha a meme gomb értéke hamis, a számológép használata során egy átlagos számológépként fog működni.
+
+Ha a felhasználó megnyomja a tizedesvessző gombot, az előforduló lehetőségek:
+* Ha a szövegmező üres, és a felhasználó megnyomja a tizedesvessző gombot, nem történik semmi.
+* Ha a szövegmező felhasználó által beírt számot tartalmaz, és a felhasználó megnyomja a tizedesvessző gombot, a szövegmezőben a szám után egy tizedesvessző jelenik meg.
+* Ha a szövegmező az egyenlőségjel megnyomása utáni eredményt jeleníti meg, és a felhasználó megnyomja a a tizedesvessző gombot, nem fog történni semmi.
+
+
+
+
+
+
 
 
