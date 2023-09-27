@@ -5,6 +5,7 @@ A rendszer célja a manapság használt elavult számológép formátum felfriss
    
 ### 2.1 Projektszerepkörök, felelőségek
 * Srcum master:
+	-   Koponya Martin 	
 * Product owner:
 	-   Dr. Tajti Tibor Gábor
 * Üzleti szereplő:
@@ -50,14 +51,16 @@ A rendszer célja a manapság használt elavult számológép formátum felfriss
    
 ## 4. Követelmények
   ### Funkcionális
-    - Egyszerűbb matematikai műveletek elvégzése
-    - A folyamat alatt az eredmények tárolása
-    - Megakadályozni, hogy a felhasználó érvénytelen adatot adjon meg
+  
+  - Egyszerűbb matematikai műveletek elvégzése
+  - A folyamat alatt az eredmények tárolása
+  - Megakadályozni, hogy a felhasználó érvénytelen adatot adjon meg
 
-### Nem Funkcionális 
-	- Gyorsnak és átláthatónak kell lennie
-	- Úgy érezze a felhasználó mintha gyorsabb fejben vagy papíron való számolás helyett a műveletek megoldása.
-	- Úgy nézzen ki a program mintha nem 15 éve fejlesztették volna amikor csak szögletes kis windows programok voltak.
+### Nem Funkcionális
+
+  - Gyorsnak és átláthatónak kell lennie
+  - Úgy érezze a felhasználó mintha gyorsabb fejben vagy papíron való számolás helyett a műveletek megoldása.
+  - Úgy nézzen ki a program mintha nem 15 éve fejlesztették volna amikor csak szögletes kis windows programok voltak.
    
 5. Funkcionális terv
     
