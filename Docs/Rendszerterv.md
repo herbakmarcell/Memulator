@@ -85,6 +85,11 @@ Kliens gépek: A követelményeknek megfelelő, Windows-ra alkalmas PC-k, amin t
 Visual Studio 2022
     
 ## 7. Architekturális terv
+
+A program futásához nem szükséges webhez vagy adatbázisrendszerhez való csatlakozás.
+
+Az alkalmazás a felhasználó számítógépén tud futni, amennyiben rendelkezik .Net keretrendszerrel. A szoftver futtatásához kétszer rá kell kattintani az állományra
+vagy a program parancsikonjára.
     
 ## 8. Adatbázis terv
 
