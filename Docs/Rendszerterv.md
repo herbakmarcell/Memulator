@@ -111,6 +111,10 @@ A tesztelés során a szoftver megfelelő működését vizsgáljuk. Amennyiben 
 esetben a hibát rögzítjük a teszt jegyzőkönyvben. Ezt követően a megtalált hibákat javítjuk a szoftverben, és újbóli tesztelésnek vetjük alá a rendszert.
 
 ## 11. Telepítési terv
+
+Fizikai telepítési terv: A számológép nem csatlakozik adatbázishoz, webszerverhez és internethez, csak a számítógépen kell futtatni.
+
+Szoftver telepítési terv: Szükségünk van egy 32-bites Windows-t futtató számítógépre, hogy futtathassuk a programot.
     
 ## 12. Karbantartási terv
 
