@@ -46,10 +46,14 @@ A rendszer célja a manapság használt elavult számológép formátum felfriss
 ## 3. Üzleti folyamatok modellje
    
 ### 3.1 Üzleti szereplők
+
+A szoftver használatához nincs szükség regisztrációra. A telepítést követően a szoftver bármely felhasználó számára elérhető, teljes egészében az összes
+funkcióval.
    
 ### 3.2 Üzleti folyamatok
    
 ## 4. Követelmények
+
   ### Funkcionális
   
   - Egyszerűbb matematikai műveletek elvégzése
