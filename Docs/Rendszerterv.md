@@ -5,12 +5,12 @@ A rendszer célja a manapság használt elavult számológép formátum felfriss
    
 ### 2.1 Projektszerepkörök, felelőségek
 * Srcum master:
-	-   Koponya Martin 	
+	-   Kaponya Martin 	
 * Product owner:
 	-   Dr. Tajti Tibor Gábor
 * Üzleti szereplő:
 	-   Megrendelő:
-		 -  Dr. Tajti Tibor Gábor
+		 -  Bagoly Gábor
    
 ### 2.2 Projektmunkások és felelőségek
    		
