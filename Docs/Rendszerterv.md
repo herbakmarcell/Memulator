@@ -74,6 +74,15 @@ A rendszer célja a manapság használt elavult számológép formátum felfriss
 	- Gomb a kijelző megjelenítésére
    
 ## 6. Fizikai környezet
+
+### Vásárolt szoftverkomponensek, valamint esetleges külső rendszerek
+Nincsenek vásárolt szoftverkomponensek.
+### Hardver topológia
+32 bites Windows-ra készült, ezért a 64 bites is képes a futtatására.
+### Fizikai alrendszerek
+Kliens gépek: A követelményeknek megfelelő, Windows-ra alkalmas PC-k, amin telepítve van a .Net keretrendszer.
+### Fejlesztő eszközök
+Visual Studio 2022
     
 ## 7. Architekturális terv
     
