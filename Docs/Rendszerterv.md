@@ -52,6 +52,8 @@ A szoftver használatához nincs szükség regisztrációra. A telepítést köv
 funkcióval.
    
 ### 3.2 Üzleti folyamatok
+
+A program indulását követően a felhasználó azonnal használhatja a számológép minden funkcióját. A felhasználó választhat a számológép különböző módjai között, ezek a szórakoztató és a hagyományos.
    
 ## 4. Követelmények
 
