@@ -65,6 +65,9 @@ A rendszer célja a manapság használt elavult számológép formátum felfriss
 ## 5. Funkcionális terv
     
 ### 5.1 Rendszerszereplők
+
+A rendszer, helyileg a felhasználó számítógépén, internetre való kapcsolódás nélkül fut. Egyetlen egy jogosultsági kör van, ezért a felhasználók között
+nem teszünk különbséget.
    
 ### 5.2 Menü-hierarchia:
 * Interface:
