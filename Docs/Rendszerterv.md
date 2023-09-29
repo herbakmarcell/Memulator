@@ -99,6 +99,10 @@ vagy a program parancsikonjára.
 Az alkalmazásunkhoz nincs szükség adatbázisra, azonban előfordulhat, hogy tárolni kell helyi fájlokat, ebben az esetben a felhasználó számítógépén történik a tárolás.
 
 ## 9. Implementációs terv
+
+ * A felhasználói felület - WindowsForms alkalmazás.
+ * C# program, ami .NET keretrendszert használ, lehetővé téve az alkalmazás futását.
+ * Az alfolyamatok objektum orientált programozási paradigma használatával.
     
 ## 10. Tesztterv
 
