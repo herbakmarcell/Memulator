@@ -82,5 +82,13 @@ namespace MemulatorDLL
             return value;
         }
 
+        public double LogXY(double x, double y)
+        {
+            double value = 0;
+            value = Math.Log(y,x);
+            return value;
+        }
+
+
     }
 }
