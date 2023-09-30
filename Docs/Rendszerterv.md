@@ -108,8 +108,7 @@ Az alkalmazásunkhoz nincs szükség adatbázisra, azonban előfordulhat, hogy t
 ## 9. Implementációs terv
 
  * A felhasználói felület - WindowsForms alkalmazás.
- * C# program, ami .NET keretrendszert használ, lehetővé téve az alkalmazás futását.
- * Az alfolyamatok objektum orientált programozási paradigma használatával.
+ * A program .NET keretrendszert használ, lehetővé téve az alkalmazás egyszerű futtatását, indítását.
     
 ## 10. Tesztterv
 
