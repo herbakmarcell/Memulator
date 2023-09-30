@@ -59,8 +59,14 @@ K8. A felhasználó bármikor rákattinthat az eredmény (=) gombra. Ekkor az ak
 
 ## 8. Képernyőtervek
 
-Főablak:
-Beállítások:
+### Korai látványterv
+![korai_látványterv](../Img/memulatoralphfa.jpg)
+
+### Javított Látványterv
+![látványterv](../Img/Memulator_látványterv.png)
+
+### Korai prototípus
+![prototípus](../Img/early_prototype.PNG)
 
 ## 9. Forgatókönyvek
 
