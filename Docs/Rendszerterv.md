@@ -59,7 +59,20 @@ A program indulását követően a felhasználó azonnal használhatja a számol
    
 ## 4. Követelmények
 
-  ### Funkcionális
+ ### Követelménytáblázat
+
+ | ID | Modul | Név | Kifejtés |
+ | :---: | --- | --- | --- |
+ | K1  | Felület | Összeadás  | Számok összeadása. |
+ | K2  | Felület | Kivonás  | Számok kivonása. |
+ | K3  | Felület | Szorzás  | Számok szorzása. |
+ | K4  | Felület | Osztás  | Számok osztása. |
+ | K5  | Felület | Gyökvonás | Számok gyökei. |
+ | K6  | Felület | Törlés  | Törlés a képernyőről |
+ | K7  | Felület | Nullázás | Az összes szám törlése a képernyőről |
+ | K8  | Felület | Eredmény | Az művelet eredményének kiíratása a képernyőre |
+
+### Funkcionális
   
   - Egyszerűbb matematikai műveletek elvégzése
   - A folyamat alatt az eredmények tárolása
