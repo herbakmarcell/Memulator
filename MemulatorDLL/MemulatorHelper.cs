@@ -74,5 +74,13 @@ namespace MemulatorDLL
             }
             return value;
         }
+
+        public double Power(double x, double y)
+        {
+            double value = 0;
+            value = Math.Pow(x, y);
+            return value;
+        }
+
     }
 }
