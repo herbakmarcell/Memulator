@@ -38,6 +38,12 @@ namespace MemulatorDLL
         }
 
 
+        public double Division(double x, double y)
+        {
+            double value = 0;
+            value = x / y;
+            return value;
+        }
 
 
 
