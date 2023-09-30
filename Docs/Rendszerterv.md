@@ -8,7 +8,7 @@ A rendszer célja a manapság használt elavult számológép formátum felfriss
 * Scrum master:
 	-   Kaponya Martin 	
 * Product owner:
-	-   Dr. Tajti Tibor Gábor
+	-   Kaponya Martin 
 * Üzleti szereplő:
 	-   Megrendelő:
 		 -  Bagoly Gábor
