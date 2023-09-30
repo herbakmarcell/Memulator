@@ -28,16 +28,16 @@ megjelenítésére.
 
 ## 5. Követelménylista
 
-| ID  | Név | Kifejtés |
-| ------------- | ------------- | ------------- |
-| 1  | Összeadás  | Számok összeadása. |
-| 2  | Kivonás  | Számok kivonása. |
-| 3  | Szorzás  | Számok szorzása. |
-| 4  | Osztás  | Számok osztása. |
-| 5  | Gyökvonás | Számok gyökei. |
-| 6  | Törlés  | Törlés a képernyőről |
-| 7  | Nullázás | Az összes szám törlése a képernyőről |
-| 8  | Eredmény | A művelet eredményének kiíratása a képernyőre. |
+| ID | Modul | Név | Kifejtés |
+| :---: | --- | --- | --- |
+| K1  | Felület | Összeadás  | Számok összeadása. |
+| K2  | Felület | Kivonás  | Számok kivonása. |
+| K3  | Felület | Szorzás  | Számok szorzása. |
+| K4  | Felület | Osztás  | Számok osztása. |
+| K5  | Felület | Gyökvonás | Számok gyökei. |
+| K6  | Felület | Törlés  | Törlés a képernyőről |
+| K7  | Felület | Nullázás | Az összes szám törlése a képernyőről |
+| K8  | Felület | Eredmény | Az művelet eredményének kiíratása a képernyőre |
 
 ## 6. Használati esetek
 
