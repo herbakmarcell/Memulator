@@ -19,6 +19,13 @@ lennie. Az alkalmazás funkciói: Összeadás, kivonás, szorzás, osztás, hatv
 
 ## 4. Jelenlegi üzleti folyamatok modellje
 
+Jelenleg az órákon a diákok megnyitják a számítógépen előre telepített számológépet, és azt használják. Néhány számítógépen azonban régebbi Windows operációs rendszer található, ezért az alkalmazás külleme és működése eltér akár két számítógép között.
+
+## 5. Igényelt üzleti folyamatok modellje
+
+Egy olyan szoftver, amely alkalmas a szórakoztató, optimális tanulásra, munkavégzésre. Használata közben a szoftver képes hangok lejátszására, képek
+megjelenítésére.
+
 A számológépünk nem sokkal különbözik az alapmodelltől, műveletei tartalmazzák:
 
 -   Összeadás
@@ -28,11 +35,6 @@ A számológépünk nem sokkal különbözik az alapmodelltől, műveletei tarta
 -   Gyökvonás
 -   Négyzetre emelés
 - 	Kijelzőn lévő adatok törlése
-
-## 5. Igényelt üzleti folyamatok modellje
-
-Egy olyan szoftver, amely alkalmas a szórakoztató, optimális tanulásra, munkavégzésre. Használata közben a szoftver képes hangok lejátszására, képek
-megjelenítésére.
 
 ## 6. Követelménylista
 
