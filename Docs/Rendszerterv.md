@@ -45,7 +45,9 @@ A Kézifék E. Inc. azt a megbízást kapta, hogy segítsék a kisiskolásokat a
    *   Prototípus prezentálása
    
 ## 3. Üzleti folyamatok modellje
-   
+
+![tanuló hozzáadó felület](../Img/business.png)
+
 ### 3.1 Üzleti szereplők
 
 A szoftver használatához nincs szükség regisztrációra. A telepítést követően a szoftver bármely felhasználó számára elérhető, teljes egészében az összes
