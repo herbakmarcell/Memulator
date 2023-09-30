@@ -37,7 +37,7 @@ megjelenítésére.
 ## 6. Követelménylista
 
 | ID | Modul | Név | Kifejtés |
-| ------------- | ------------- | ------------- |
+| :---: | --- | --- | --- |
 | K1  | Felület | Összeadás  | Számok összeadása. |
 | K2  | Felület | Kivonás  | Számok kivonása. |
 | K3  | Felület | Szorzás  | Számok szorzása. |
