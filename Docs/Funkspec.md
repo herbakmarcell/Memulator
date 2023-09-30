@@ -46,14 +46,14 @@ megjelenítésére.
 
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
 
-1: A felhasználó a második szám kiválasztása előtt rákattint az összeadás (+) gombra. Ezzel jelezve a rendszernek, hogy a két szám összegét szeretnénk megkapni.
-2: A felhasználó a második szám kiválasztása előtt rákattint a kivonás (-) jelre. Ezzel jelezve a rendszernek, hogy az első számból ki szeretnénk vonni a másodikat.
-3: A felhasználó a második szám kiválasztása előtt rákattint a szorzás (*) jelre. Ezzel jelezve a rendszernek, hogy a két szám szorzatát szeretnénk megkapni.
-4: A felhasználó a második szám kiválasztása előtt rákattint az osztás (/) jelre. Ezzel jelezve a rendszernek, hogy az első számot el szeretnénk osztani a második számmal.
-5: A felhasználó a második szám kiválasztása előtt rákattint a gyökvonás (√) jelre. Ezzel jelezve a rendszernek, hogy az első számnak a második számú gyökét szeretnénk megkapni.
-6. A felhasználó rákattinthat a törlés (DEL) gombra. Ekkor a legutolsó karakter törlésre kerül a képrenyőről.
-7. A felhasználó rákattinthat a nullázás (AC) gombra. Ekkor az összes szám törlésre kerül a képernyőről.
-8. A felhasználó bármikor rákattinthat az eredmény (=) gombra. Ekkor az aktuális számolási folyamat eredményét kiírja a kijelzőre.
+K1: A felhasználó a második szám kiválasztása előtt rákattint az összeadás (+) gombra. Ezzel jelezve a rendszernek, hogy a két szám összegét szeretnénk megkapni.
+K2: A felhasználó a második szám kiválasztása előtt rákattint a kivonás (-) jelre. Ezzel jelezve a rendszernek, hogy az első számból ki szeretnénk vonni a másodikat.
+K3: A felhasználó a második szám kiválasztása előtt rákattint a szorzás (*) jelre. Ezzel jelezve a rendszernek, hogy a két szám szorzatát szeretnénk megkapni.
+K4: A felhasználó a második szám kiválasztása előtt rákattint az osztás (/) jelre. Ezzel jelezve a rendszernek, hogy az első számot el szeretnénk osztani a második számmal.
+K5: A felhasználó a második szám kiválasztása előtt rákattint a gyökvonás (√) jelre. Ezzel jelezve a rendszernek, hogy az első számnak a második számú gyökét szeretnénk megkapni.
+K6. A felhasználó rákattinthat a törlés (DEL) gombra. Ekkor a legutolsó karakter törlésre kerül a képrenyőről.
+K7. A felhasználó rákattinthat a nullázás (AC) gombra. Ekkor az összes szám törlésre kerül a képernyőről.
+K8. A felhasználó bármikor rákattinthat az eredmény (=) gombra. Ekkor az aktuális számolási folyamat eredményét kiírja a kijelzőre.
 
 ## 8. Képernyőtervek
 
