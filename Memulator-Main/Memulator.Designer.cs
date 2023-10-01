@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             this.factorial = new System.Windows.Forms.Button();
             this.squareroot = new System.Windows.Forms.Button();
             this.multiply = new System.Windows.Forms.Button();

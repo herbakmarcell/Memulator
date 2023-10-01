@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MemulatorDLL\MemulatorDLL.csproj">
+      <Project>{edbcd2a8-6c1d-4af9-b286-f748ea268175}</Project>
+      <Name>MemulatorDLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

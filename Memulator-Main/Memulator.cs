@@ -17,6 +17,7 @@ namespace Memulator_Main
             InitializeComponent();
         }
 
+
         double x = 0;
         double y = 0;
 
@@ -45,5 +46,6 @@ namespace Memulator_Main
         {
             displayOP.Text += "3";
         }
+
     }
 }
