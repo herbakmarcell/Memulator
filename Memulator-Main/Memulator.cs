@@ -16,5 +16,36 @@ namespace Memulator_Main
         {
             InitializeComponent();
         }
+
+
+        double x = 0;
+        double y = 0;
+
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void division_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void num1_Click(object sender, EventArgs e)
+        {
+            displayOP.Text += "1";
+        }
+
+        private void num2_Click(object sender, EventArgs e)
+        {
+            displayOP.Text += "2";
+        }
+
+        private void num3_Click(object sender, EventArgs e)
+        {
+            displayOP.Text += "3";
+        }
+
     }
 }

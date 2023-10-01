@@ -9,8 +9,8 @@ alkalmas az igények kielégítésére.
 
 ## 2. Jelenlegi helyzet
 
-Jelenleg unalmas, egyszerű számológépeket használnak a fiatalok, ezért szeretnénk ezeket lecserélni, és saját, könnyen használhatóakkal helyettesíteni, amely
-szórakoztató és optimális a feladat elvégzésére. Ezzel megkönnyítve a tanárok, szülők dolgát azzal, hogy a fiatalok szívesebben használják a számológépet.
+Jelenleg unalmas, egyszerű számológépeket használnak a fiatalok, ezért szeretné a megrendelő ezeket lecserélni, és saját, könnyen használhatóakkal helyettesíteni, amely
+szórakoztató és optimális a feladat elvégzésére. Ezzel megkönnyítve a tanárok, szülők dolgát, hogy a fiatalok szívesebben használják a számológépet.
 
 ## 3. Vágyálom rendszer
 
@@ -18,6 +18,13 @@ A projekt célja, hogy optimális és egyben szórakoztató számológép jöjj�
 lennie. Az alkalmazás funkciói: Összeadás, kivonás, szorzás, osztás, hatványozás, gyökvonás, a hagyományos számológépen látható DEL illetve AC jelzésű gombok.
 
 ## 4. Jelenlegi üzleti folyamatok modellje
+
+Jelenleg az órákon a diákok megnyitják a számítógépen előre telepített számológépet, és azt használják. Néhány számítógépen azonban régebbi Windows operációs rendszer található, ezért az alkalmazás külleme és működése eltér akár két számítógép között.
+
+## 5. Igényelt üzleti folyamatok modellje
+
+Egy olyan szoftver, amely alkalmas a szórakoztató, optimális tanulásra, munkavégzésre. Használata közben a szoftver képes hangok lejátszására, képek
+megjelenítésére.
 
 A számológépünk nem sokkal különbözik az alapmodelltől, műveletei tartalmazzák:
 
@@ -29,22 +36,18 @@ A számológépünk nem sokkal különbözik az alapmodelltől, műveletei tarta
 -   Négyzetre emelés
 - 	Kijelzőn lévő adatok törlése
 
-## 5. Igényelt üzleti folyamatok modellje
-
-Egy olyan szoftver, amely alkalmas a szórakoztató, optimális tanulásra, munkavégzésre. Használata közben a szoftver képes hangok lejátszására, képek
-megjelenítésére.
-
 ## 6. Követelménylista
 
-| ID  | Név | Kifejtés |
-| ------------- | ------------- | ------------- |
-| 1  | Összeadás  | Számok összeadása. |
-| 2  | Kivonás  | Számok kivonása. |
-| 3  | Szorzás  | Számok szorzása. |
-| 4  | Osztás  | Számok osztása. |
-| 5  | Gyökvonás | Számok gyökei. |
-| 6  | Törlés  | Törlés a képernyőről |
-| 7  | Nullázás | Az összes szám törlése a képernyőről |
+| ID | Modul | Név | Kifejtés |
+| :---: | --- | --- | --- |
+| K1  | Felület | Összeadás  | Számok összeadása. |
+| K2  | Felület | Kivonás  | Számok kivonása. |
+| K3  | Felület | Szorzás  | Számok szorzása. |
+| K4  | Felület | Osztás  | Számok osztása. |
+| K5  | Felület | Gyökvonás | Számok gyökei. |
+| K6  | Felület | Törlés  | Törlés a képernyőről |
+| K7  | Felület | Nullázás | Az összes szám törlése a képernyőről |
+| K8  | Felület | Eredmény | Az művelet eredményének kiíratása a képernyőre |
 
 ## 7. Fogalomtár
 
