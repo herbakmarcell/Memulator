@@ -1,6 +1,6 @@
 ﻿namespace Memulator_Main
 {
-    partial class Form1
+    partial class Memulator
     {
         /// <summary>
         /// Required designer variable.

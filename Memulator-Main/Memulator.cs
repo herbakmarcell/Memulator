@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Memulator_Main
 {
-    public partial class Form1 : Form
+    public partial class Memulator : Form
     {
-        public Form1()
+        public Memulator()
         {
             InitializeComponent();
         }
