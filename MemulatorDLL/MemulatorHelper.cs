@@ -89,6 +89,13 @@ namespace MemulatorDLL
             return value;
         }
 
+        public double Negative(double x)
+        {
+            double value = x;
+            value *= -1;
+            return value;
+        }
+
 
     }
 }
