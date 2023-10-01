@@ -89,7 +89,7 @@ namespace MemulatorDLL
             return value;
         }
 
-        public double Negative(double x)
+        public double PrefixChanger(double x)
         {
             double value = x;
             value *= -1;
