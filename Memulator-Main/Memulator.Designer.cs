@@ -171,6 +171,7 @@
             this.num3.TabIndex = 41;
             this.num3.Text = "3";
             this.num3.UseVisualStyleBackColor = true;
+            this.num3.Click += new System.EventHandler(this.num3_Click);
             // 
             // num2
             // 
@@ -180,6 +181,7 @@
             this.num2.TabIndex = 40;
             this.num2.Text = "2";
             this.num2.UseVisualStyleBackColor = true;
+            this.num2.Click += new System.EventHandler(this.num2_Click);
             // 
             // num1
             // 
@@ -189,6 +191,7 @@
             this.num1.TabIndex = 39;
             this.num1.Text = "1";
             this.num1.UseVisualStyleBackColor = true;
+            this.num1.Click += new System.EventHandler(this.num1_Click);
             // 
             // num6
             // 
