@@ -44,23 +44,14 @@ A számológépünk nem sokkal különbözik az alapmodelltől, műveletei tarta
 ## 5. Követelménylista
 
 | ID | Modul | Név | Kifejtés |
-
 | :---: | --- | --- | --- |
-
 | K1  | Felület | Összeadás  | Számok összeadása. |
-
 | K2  | Felület | Kivonás  | Számok kivonása. |
-
 | K3  | Felület | Szorzás  | Számok szorzása. |
-
 | K4  | Felület | Osztás  | Számok osztása. |
-
 | K5  | Felület | Gyökvonás | Számok gyökei. |
-
 | K6  | Felület | Törlés  | Törlés a képernyőről |
-
 | K7  | Felület | Nullázás | Az összes szám törlése a képernyőről |
-
 | K8  | Felület | Eredmény | Az művelet eredményének kiíratása a képernyőre |
 
 
@@ -207,27 +198,16 @@ Ha a felhasználó megnyomja a tizedesvessző gombot, az előforduló lehetősé
 
 ## 10. Funkció - követelmény megfeleltetése
 
-| Id | Követelmény | Funkció |
-
-| K1  | Hibamentes működés, letisztult megjelenités| Egy felhasználó által megadott szám hozzáadása egy másik,
-a hozzáadás gomb megnyomása után megadott számhoz, vagy az egyenlőség megnyomása után kapott eredményhez egy másik,
-a felhasználó által megadott szám hozzáadása. |
-
-| K2  | Hibamentes működés, letisztult megjelenités| Egy felhasználó által megadott szám kivonása, egy másik,
-a kivonás gomb megnyomása után megadott számhoz, vagy az egyenlőség megnyomása után kapott eredményhez egy másik,
-a felhasználó által megadott szám hozzáadása. |
-
-| K3  | Szorzás  | Számok szorzása. |
-
-| K4  | Osztás  | Számok osztása. |
-
-| K5  | Gyökvonás | Számok gyökei. |
-
-| K6  | Törlés  | Törlés a képernyőről |
-
-| K7  | Nullázás | Az összes szám törlése a képernyőről |
-
-| K8  | Eredmény | Az művelet eredményének kiíratása a képernyőre |
+ | Id | Követelmény | Funkció |
+ | :---: | --- | --- |
+ | K1  | Hibamentes működés, letisztult megjelenités| Egy felhasználó által megadott szám hozzáadása egy másik, a hozzáadás gomb megnyomása után megadott számhoz, vagy az egyenlőség megnyomása után kapott eredményhez egy másik, a felhasználó által megadott szám hozzáadása. |
+ | K2  | Hibamentes működés, letisztult megjelenités| Egy felhasználó által megadott szám kivonása, egy másik, a kivonás gomb megnyomása után megadott számhoz, vagy az egyenlőség megnyomása után kapott eredményhez egy másik, a felhasználó által megadott szám hozzáadása. |
+ | K3  | Szorzás  | Számok szorzása. |
+ | K4  | Osztás  | Számok osztása. |
+ | K5  | Gyökvonás | Számok gyökei. |
+ | K6  | Törlés  | Törlés a képernyőről |
+ | K7  | Nullázás | Az összes szám törlése a képernyőről |
+ | K8  | Eredmény | Az művelet eredményének kiíratása a képernyőre |
 
 ## 11. Fogalomszótár
 
