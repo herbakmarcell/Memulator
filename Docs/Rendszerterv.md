@@ -82,7 +82,7 @@ A program indulását követően a felhasználó azonnal használhatja a számol
 
   - Gyorsnak és átláthatónak kell lennie
   - Úgy érezze a felhasználó mintha gyorsabb fejben vagy papíron való számolás helyett a műveletek megoldása.
-  - Úgy nézzen ki a program mintha nem 15 éve fejlesztették volna amikor csak szögletes kis windows programok voltak.
+  - Úgy nézzen ki a program mintha, nem 15 éve fejlesztették volna.
    
 ## 5. Funkcionális terv
     
