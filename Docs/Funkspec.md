@@ -2,8 +2,7 @@
 ## 1. Jelenlegi helyzet
 
 Jelenleg unalmas, egyszerű számológépeket használnak a fiatalok, ezért szeretnénk ezeket lecserélni,
-és saját, könnyen használhatóakkal helyettesíteni, amely
-szórakoztató és optimális a feladat elvégzésére. Ezzel megkönnyítve a tanárok, szülők dolgát azzal,
+és saját, könnyen használhatóakkal helyettesíteni, amely szórakoztató és optimális a feladat elvégzésére. Ezzel megkönnyítve a tanárok, szülők dolgát azzal,
 hogy a fiatalok szívesebben használják a számológépet.
 
 ## 2. Vágyálom rendszer
@@ -26,19 +25,12 @@ Használata közben a szoftver képes hangok lejátszására, képek
 megjelenítésére.
 
 A számológépünk nem sokkal különbözik az alapmodelltől, műveletei tartalmazzák:
-
  -   Összeadás
-   
  -   Kivonás
-   
  -   Szorzás
-   
  -   Osztás
-   
  -   Gyökvonás
-
  -   Négyzetre emelés
-   
  - 	Kijelzőn lévő adatok törlése
 
 ## 5. Követelménylista
@@ -92,55 +84,31 @@ Ekkor az aktuális számolási folyamat eredményét kiírja a kijelzőre.
 ## 9. Forgatókönyvek
 
 A program elindítása után minden felhasználónak a főablak jelenik meg, melyben a következők jelennek meg:
-
 * számok megjelenitésére szolgáló szövegdoboz
-  
 * tizedesvessző
-  
 * felhasználó által bevihető számok gombjai
   *  nulla (0)
-    
   *  egy (1)
-    
   *  kettő (2)
-    
   *  három (3)
-    
   *  négy (4)
-    
   *  öt (5)
-    
   *  hat (6)
- 
   *  hét (7)
-    
   *  nyolc (8)
-    
   *  kilenc (9)
-    
 * műveleti jelek
   * összeadás
-  
   * kivonás
-    
   * szorzás
-    
   * osztás
-    
   * gyökvonás
-    
   * egyenlőségjel
-    
 * AC gomb
-  
 * DEL gomb
-  
 * meme gomb
-  
 A szövegdobozban jelenik meg:
-
 * a felhasználó által megadott számok
- 
 * az eredményként megjelenő számok
 
 A felhasználó kezdésképp meg tud adni egy számot, mely után egy műveleti jel megnyomásával jelezni tudja, 
@@ -202,16 +170,20 @@ Ha a felhasználó megnyomja a tizedesvessző gombot, az előforduló lehetősé
  | :---: | --- | --- |
  | K1  | Hibamentes működés, letisztult megjelenités| Egy felhasználó által megadott szám hozzáadása egy másik, a hozzáadás gomb megnyomása után megadott számhoz, vagy az egyenlőség megnyomása után kapott eredményhez egy másik, a felhasználó által megadott szám hozzáadása. |
  | K2  | Hibamentes működés, letisztult megjelenités| Egy felhasználó által megadott szám kivonása, egy másik, a kivonás gomb megnyomása után megadott számhoz, vagy az egyenlőség megnyomása után kapott eredményhez egy másik, a felhasználó által megadott szám hozzáadása. |
- | K3  | Szorzás  | Számok szorzása. |
- | K4  | Osztás  | Számok osztása. |
- | K5  | Gyökvonás | Számok gyökei. |
- | K6  | Törlés  | Törlés a képernyőről |
- | K7  | Nullázás | Az összes szám törlése a képernyőről |
- | K8  | Eredmény | Az művelet eredményének kiíratása a képernyőre |
+ | K3  | Hibamentes működés, letisztult megjelenités| Egy felhasználó által megadott szám megszorzása, egy másik, a szorzás gomb megnyomása után megadott számhoz, vagy az egyenlőség megnyomása után kapott eredményhez egy másik, a felhasználó által megadott szám megszorzása. |
+ | K4  | Hibamentes működés, letisztult megjelenités| Egy felhasználó által megadott szám elosztása, egy másik, az elosztás gomb megnyomása után megadott számhoz, vagy az egyenlőség megnyomása után kapott eredményhez egy másik, a felhasználó által megadott szám elosztása. |
+ | K5  | Hibamentes működés, letisztult megjelenités| Egy felhasználó által megadott szám gyökének a kiszámítása. A gomb megnyomása után meg tudjuk adni hányadik gyökét szeretnénk megkapni, utána megadhatjuk a számot, mely gyökét szeretnénk tudni. |
+ | K6  | Precíz, hibamentes működés, letisztult megjelenítés | A törlés gomb kitörli a felhasználó által megadott számot, üres szövegdoboz esetén nem tesz semmit. |
+ | K7  | Precíz, hibamentes működés, letisztult megjelenítés | A nullázás gomb  a szövegdobozt és a memóriát is alaphelyzetbe állitja megnyomás után, ha a program alaphelyzetben van nem tesz semmit. |
+ | K8  | Gyors eredménymegadás, pontosság, kiszámíthatóság | A gomb megnyomása után az eredmény meglejenik helyesen a szövegdobozban. Ha a program alaphelyzetben van nem tesz semmit. |
 
 ## 11. Fogalomszótár
 
-
+* **Meme:** A mém olyan eszme, viselkedés vagy stílus, amely utánzás útján terjed személyről személyre egy kultúrán belül, és gyakran egy adott jelenséget vagy témát reprezentáló szimbolikus jelentést hordoz.
+*  **DEL:** "Delete", másnéven Törlés.
+*  **AC:** "All Clear", másnéven "Minden tisztitása".
+*  **Szoftver:** A számítógép egy programja, mely egy feladatot hajt végre utasitások sorozatával és adatok használatával.
+*  **Prototípus:** A kiadás előtti verzió, tesztelés céljából. 
 
 
 
