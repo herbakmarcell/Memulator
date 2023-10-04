@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MemulatorDLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,10 +19,13 @@ namespace Memulator_Main
         }
 
         //Marcinak: Amennyiben egészen számolunk long, amennyiben tört double. 
-
+        bool usedOperator = false;
+        bool addition = false;
         double x = 0;
         double y = 0;
-        double temp = 0;
+        double memory = 0;
+
+        
 
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -86,48 +90,127 @@ namespace Memulator_Main
 
         private void plus_Click(object sender, EventArgs e)
         {
+            if (usedOperator)
+            {
+                return;
+            }
+
             if (displayOP.Text=="")
             {
                 return;
             }
             try
             {
-                temp = double.Parse(displayOP.Text);
+                x = double.Parse(displayOP.Text);
+
             }
             catch (Exception)
             {
-                displayEQ.Text = "= Not A Number!";
-                displayOP.Text = temp.ToString();
-                throw;
+                displayEQ.Text = "= Not Number!";
             }
-            x += temp;
-            temp = 0;
-            displayEQ.Text = "= "+x.ToString();
-            displayOP.Text = temp.ToString();
 
+
+            addition = true;
+            displayEQ.Text = x.ToString();
+            displayOP.Text = "";
+            
 
         }
 
         private void minus_Click(object sender, EventArgs e)
         {
-            if (displayOP.Text == "")
+            
+        }
+
+        private void equals_Click(object sender, EventArgs e)
+        {
+            if (displayEQ.Text=="")
+            {
+                if (usedOperator)
+                {
+                    y = 0;
+                }
+                else
+                {
+                    x = 0;
+                    y = 0;
+                }
+
+
+            }
+            if (addition)
+            {
+                if (memory != 0)
+                {
+                    try
+                    {
+                        y = double.Parse(displayOP.Text);
+                    }
+                    catch (Exception)
+                    {
+                        displayEQ.Text = "Not A Number!";
+                        memory = 0;
+                        x = 0;
+                        y = 0;
+                        usedOperator = false;
+                        addition = false;
+                        return;
+                    }
+                    displayEQ.Text = "= " + MemulatorHelper.Addition(memory, y).ToString();
+                    memory = MemulatorHelper.Addition(memory, y);
+                    usedOperator = false;
+                    addition = false;
+                    displayOP.Text = "";
+                }
+                try
+                {
+                    y = double.Parse(displayOP.Text);
+                }
+                catch (Exception)
+                {
+                    displayEQ.Text = "Not A Number!";
+                    memory = 0;
+                    x = 0;
+                    y = 0;
+                    usedOperator = false;
+                    addition = false;
+                    return;
+                }
+                displayEQ.Text = "= "+MemulatorHelper.Addition(x,y).ToString();
+                memory = MemulatorHelper.Addition(x, y);
+                usedOperator = false;
+                addition = false;
+                displayOP.Text = "";
+            }
+        }
+
+        private void squareroot_Click(object sender, EventArgs e)
+        {
+            if (displayOP.Text=="")
             {
                 return;
             }
             try
             {
-                temp = double.Parse(displayOP.Text);
+                x = double.Parse(displayOP.Text);
             }
             catch (Exception)
             {
-                displayEQ.Text = "= Not A Number!";
-                displayOP.Text = temp.ToString();
-                throw;
+                displayEQ.Text = "Syntacs Error!";
+                x = 0;
+                y = 0;
+                memory = 0;
+                return;
             }
-            x -= temp;
-            temp = 0;
-            displayEQ.Text = "= " + x.ToString();
-            displayOP.Text = temp.ToString();
+            if (x<0)
+            {
+                displayEQ.Text = "MATH Error!";
+            }
+            memory = MemulatorHelper.Sqrt(x);
+            displayEQ.Text = memory.ToString();
+            x = 0;
+            displayOP.Text = "";
+
         }
     }
 }

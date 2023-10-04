@@ -23,7 +23,7 @@ namespace MemulatorDLL
         //    this.y = y;
         //}
 
-        public double Addition(double x, double y)
+        public static double Addition(double x, double y)
         {
             double value = 0;
             value = x + y;
@@ -53,7 +53,7 @@ namespace MemulatorDLL
         }
 
 
-        public double Sqrt(double x)
+        public static double Sqrt(double x)
         {
             double value = 0;
             value = Math.Sqrt(x);

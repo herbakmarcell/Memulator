@@ -72,6 +72,7 @@
             this.squareroot.TabIndex = 52;
             this.squareroot.Text = "sqrt";
             this.squareroot.UseVisualStyleBackColor = true;
+            this.squareroot.Click += new System.EventHandler(this.squareroot_Click);
             // 
             // multiply
             // 
@@ -146,6 +147,7 @@
             this.equals.TabIndex = 44;
             this.equals.Text = "=";
             this.equals.UseVisualStyleBackColor = true;
+            this.equals.Click += new System.EventHandler(this.equals_Click);
             // 
             // num0
             // 
