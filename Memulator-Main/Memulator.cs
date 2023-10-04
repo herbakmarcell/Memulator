@@ -97,15 +97,37 @@ namespace Memulator_Main
             catch (Exception)
             {
                 displayEQ.Text = "= Not A Number!";
-                displayOP.Text = "";
+                displayOP.Text = temp.ToString();
                 throw;
             }
             x += temp;
             temp = 0;
             displayEQ.Text = "= "+x.ToString();
-            displayOP.Text = "";
+            displayOP.Text = temp.ToString();
 
 
+        }
+
+        private void minus_Click(object sender, EventArgs e)
+        {
+            if (displayOP.Text == "")
+            {
+                return;
+            }
+            try
+            {
+                temp = double.Parse(displayOP.Text);
+            }
+            catch (Exception)
+            {
+                displayEQ.Text = "= Not A Number!";
+                displayOP.Text = temp.ToString();
+                throw;
+            }
+            x -= temp;
+            temp = 0;
+            displayEQ.Text = "= " + x.ToString();
+            displayOP.Text = temp.ToString();
         }
     }
 }

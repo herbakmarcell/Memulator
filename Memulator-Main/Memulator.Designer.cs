@@ -127,6 +127,7 @@
             this.minus.TabIndex = 46;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
+            this.minus.Click += new System.EventHandler(this.minus_Click);
             // 
             // division
             // 
