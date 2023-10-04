@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             this.factorial = new System.Windows.Forms.Button();
             this.squareroot = new System.Windows.Forms.Button();
             this.multiply = new System.Windows.Forms.Button();
@@ -118,6 +117,7 @@
             this.plus.TabIndex = 47;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
+            this.plus.Click += new System.EventHandler(this.plus_Click);
             // 
             // minus
             // 
@@ -154,6 +154,7 @@
             this.num0.TabIndex = 43;
             this.num0.Text = "0";
             this.num0.UseVisualStyleBackColor = true;
+            this.num0.Click += new System.EventHandler(this.num0_Click);
             // 
             // dot
             // 
@@ -202,6 +203,7 @@
             this.num6.TabIndex = 38;
             this.num6.Text = "6";
             this.num6.UseVisualStyleBackColor = true;
+            this.num6.Click += new System.EventHandler(this.num6_Click);
             // 
             // num5
             // 
@@ -211,6 +213,7 @@
             this.num5.TabIndex = 37;
             this.num5.Text = "5";
             this.num5.UseVisualStyleBackColor = true;
+            this.num5.Click += new System.EventHandler(this.num5_Click);
             // 
             // num4
             // 
@@ -220,6 +223,7 @@
             this.num4.TabIndex = 36;
             this.num4.Text = "4";
             this.num4.UseVisualStyleBackColor = true;
+            this.num4.Click += new System.EventHandler(this.num4_Click);
             // 
             // num9
             // 
@@ -229,6 +233,7 @@
             this.num9.TabIndex = 35;
             this.num9.Text = "9";
             this.num9.UseVisualStyleBackColor = true;
+            this.num9.Click += new System.EventHandler(this.num9_Click);
             // 
             // num8
             // 
@@ -238,6 +243,7 @@
             this.num8.TabIndex = 34;
             this.num8.Text = "8";
             this.num8.UseVisualStyleBackColor = true;
+            this.num8.Click += new System.EventHandler(this.num8_Click);
             // 
             // num7
             // 
@@ -247,6 +253,7 @@
             this.num7.TabIndex = 33;
             this.num7.Text = "7";
             this.num7.UseVisualStyleBackColor = true;
+            this.num7.Click += new System.EventHandler(this.num7_Click);
             // 
             // Mode
             // 
