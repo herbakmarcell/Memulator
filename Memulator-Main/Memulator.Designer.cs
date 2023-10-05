@@ -103,7 +103,7 @@
             // 
             // allclear
             // 
-            this.allclear.Location = new System.Drawing.Point(197, 164);
+            this.allclear.Location = new System.Drawing.Point(197, 165);
             this.allclear.Name = "allclear";
             this.allclear.Size = new System.Drawing.Size(50, 50);
             this.allclear.TabIndex = 48;
@@ -270,7 +270,7 @@
             // 
             // logxy
             // 
-            this.logxy.Location = new System.Drawing.Point(197, 220);
+            this.logxy.Location = new System.Drawing.Point(197, 221);
             this.logxy.Name = "logxy";
             this.logxy.Size = new System.Drawing.Size(50, 50);
             this.logxy.TabIndex = 54;
