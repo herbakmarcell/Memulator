@@ -91,6 +91,7 @@
             this.displayEQ.Name = "displayEQ";
             this.displayEQ.Size = new System.Drawing.Size(274, 20);
             this.displayEQ.TabIndex = 50;
+            this.displayEQ.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // del
             // 
