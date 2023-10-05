@@ -16,11 +16,16 @@ namespace Memulator_Main
         public Memulator()
         {
             InitializeComponent();
+            displayOP.Text = "0"; // Default value
+            chars.Add("0"); // Default value
         }
 
-        double memory = 0;
-        double y = 0;
-        List<string> chars = new List<string>();
+        double memory = 0; // First argument and requirement for saving the number
+        double y = 0; // Second argument (if needed)
+        List<string> chars = new List<string>(); // Checklist for 0 and dot (.) at the beginning of the number
+
+        bool secondState = false; // Used by operators with 2 arguments
+        bool addUsed = false; // If an addition was invoked
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -31,7 +36,7 @@ namespace Memulator_Main
         {
 
         }
-        // Verzió 1.2 - Marci
+        // Verzió 1.2 - Marci - Egész számokra működik
         private void num1_Click(object sender, EventArgs e)
         {
             if (chars.Count == 0)
@@ -57,6 +62,24 @@ namespace Memulator_Main
 
         private void num2_Click(object sender, EventArgs e)
         {
+            if (chars.Count == 0)
+            {
+                chars.Add("2");
+                displayOP.Text += "2";
+                return;
+            }
+            else if (chars[0] == "0")
+            {
+                chars.RemoveAt(0);
+                displayOP.Text = "";
+                chars.Add("2");
+                foreach (var chara in chars)
+                {
+                    displayOP.Text += chara;
+                }
+                return;
+            }
+            chars.Add("2");
             displayOP.Text += "2";
         }
 
@@ -94,7 +117,7 @@ namespace Memulator_Main
         {
             displayOP.Text += "9";
         }
-        // Verzió 1.2 - Marci
+        // Verzió 1.3 - Marci - Egész számokra működik
         private void num0_Click(object sender, EventArgs e)
         {
             if (chars.Count == 0)
@@ -111,20 +134,47 @@ namespace Memulator_Main
             displayOP.Text += "0";
         }
 
-        // Javítás
+        // Verzió 0.4 - Marci - Egész számokra működik
         private void plus_Click(object sender, EventArgs e)
         {
-            if (displayOP.Text == "")
+            addUsed = true;
+            if (!secondState)
             {
-
+                if (displayOP.Text == "")
+                {
+                    return;
+                }
+                memory = double.Parse(displayOP.Text);
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = memory.ToString();
+                secondState = true;
+                return;
             }
+            if (secondState)
+            {
+                if (displayOP.Text == "")
+                {
+                    return;
+                }
+                y = double.Parse(displayOP.Text);
+                memory = MemulatorHelper.Addition(memory, y);
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = memory.ToString();
+                return;
+            }
+            
         }
 
         private void minus_Click(object sender, EventArgs e)
         {
             
         }
-        // Verzió 1.3 - Marci
+
+        // Verzió 0.5 - Marci - Működő összeadás
         private void equals_Click(object sender, EventArgs e)
         {
             if (displayOP.Text == "")
@@ -140,19 +190,23 @@ namespace Memulator_Main
                 }
                 return;
             }
-
-            try
+            
+            if (addUsed && secondState)
             {
-                memory = double.Parse(displayOP.Text);
+                y = double.Parse(displayOP.Text);
+                memory = MemulatorHelper.Addition(memory, y);
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = "= " + memory.ToString();
+                addUsed = false;
+                return;
             }
-            catch (Exception)
-            {
-                // Ideiglenes
-                throw;
-            }
-            displayEQ.Text = memory.ToString();
+            memory = double.Parse(displayOP.Text);
+            displayEQ.Text = "= " + displayOP.Text;
             chars.Clear();
-            displayOP.Text = "";
+            displayOP.Text = "0";
+            chars.Add("0");
 
         }
 
