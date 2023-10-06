@@ -26,6 +26,7 @@ namespace Memulator_Main
 
         bool secondState = false; // Used by operators with 2 arguments
         bool addUsed = false; // If an addition was invoked
+        bool subUsed = false; // If a subtraction was invoked
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -134,19 +135,31 @@ namespace Memulator_Main
             displayOP.Text += "0";
         }
 
-        // Verzió 0.4.1 - Barnabás - Egész számokra működik
+        // Verzió 0.4.2 - Barnabás - Egész számokra működik
         private void plus_Click(object sender, EventArgs e)
         {
+            // Ez kell minden művelet előtti tesztre
+            if (subUsed && secondState)
+            {
+                subUsed = false;
+                y = double.Parse(displayOP.Text);
+                memory = MemulatorHelper.Subtract(memory, y);
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = memory.ToString();
+            }
+
             addUsed = true;
             //Amennyiben megcsináltad a többi műveletet, rakd itt false-ra
             if (!secondState)
             {
-                
                 memory = double.Parse(displayOP.Text);
                 chars.Clear();
                 displayOP.Text = "0";
                 chars.Add("0");
                 displayEQ.Text = memory.ToString();
+                addUsed = true;
                 secondState = true;
                 return;
             }
@@ -169,7 +182,41 @@ namespace Memulator_Main
 
         private void minus_Click(object sender, EventArgs e)
         {
-            
+            if (addUsed && secondState)
+            {
+                addUsed = false;
+                y = double.Parse(displayOP.Text);
+                memory = MemulatorHelper.Addition(memory, y);
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = memory.ToString();
+            }
+
+            subUsed = true;
+            //Amennyiben megcsináltad a többi műveletet, rakd itt false-ra
+            if (!secondState)
+            {
+
+                memory = double.Parse(displayOP.Text);
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = memory.ToString();
+                subUsed = true;
+                secondState = true;
+                return;
+            }
+            if (secondState)
+            {
+                y = double.Parse(displayOP.Text);
+                memory = MemulatorHelper.Subtract(memory, y); // 8)
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = memory.ToString();
+                return;
+            }
         }
 
         // Verzió 0.5 - Marci - Működő összeadás
@@ -200,6 +247,19 @@ namespace Memulator_Main
                 addUsed = false;
                 return;
             }
+
+            if (subUsed && secondState)
+            {
+                y = double.Parse(displayOP.Text);
+                memory = MemulatorHelper.Subtract(memory, y);
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = "= " + memory.ToString();
+                subUsed = false;
+                return;
+            }
+
             memory = double.Parse(displayOP.Text);
             displayEQ.Text = "= " + displayOP.Text;
             chars.Clear();
@@ -224,6 +284,12 @@ namespace Memulator_Main
             secondState = false;
             addUsed = false;
             //Amennyiben megcsináltad a többi műveletet írd a state-jét ide
+            subUsed = false;
+        }
+
+        private void multiply_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

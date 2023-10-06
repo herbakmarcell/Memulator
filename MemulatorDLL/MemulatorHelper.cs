@@ -30,7 +30,7 @@ namespace MemulatorDLL
             return value;
         }
 
-        public double Subtract(double x, double y)
+        public static double Subtract(double x, double y)
         {
             double value = 0;
             value = x - y;

@@ -85,6 +85,7 @@
             this.multiply.TabIndex = 51;
             this.multiply.Text = "*";
             this.multiply.UseVisualStyleBackColor = true;
+            this.multiply.Click += new System.EventHandler(this.multiply_Click);
             // 
             // displayEQ
             // 
