@@ -27,6 +27,7 @@ namespace Memulator_Main
         bool secondState = false; // Used by operators with 2 arguments
         bool addUsed = false; // If an addition was invoked
         bool subUsed = false; // If a subtraction was invoked
+        bool mulUsed = false; // If a multiplication was invoked
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -260,6 +261,19 @@ namespace Memulator_Main
                 return;
             }
 
+            if (mulUsed && secondState)
+            {
+                y = double.Parse(displayOP.Text);
+                memory = MemulatorHelper.Multiply(memory, y);
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = memory.ToString();
+                mulUsed = false;
+                secondState = false;
+                return;
+            }
+
             memory = double.Parse(displayOP.Text);
             displayEQ.Text = "= " + displayOP.Text;
             chars.Clear();
@@ -282,13 +296,70 @@ namespace Memulator_Main
             displayOP.Text = "0";
             chars.Add("0");
             secondState = false;
-            addUsed = false;
             //Amennyiben megcsináltad a többi műveletet írd a state-jét ide
+            addUsed = false;
             subUsed = false;
+            mulUsed = false;
         }
 
         private void multiply_Click(object sender, EventArgs e)
         {
+            if (displayOP.Text =="0")
+            {
+                memory = double.Parse(displayOP.Text);
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = memory.ToString();
+                mulUsed = true;
+                secondState = true;
+                return;
+            }
+            // Ez kell minden művelet előtti tesztre
+            if (subUsed && secondState)
+            {
+                subUsed = false;
+                y = double.Parse(displayOP.Text);
+                memory = MemulatorHelper.Subtract(memory, y);
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = memory.ToString();
+            }
+            if (addUsed && secondState)
+            {
+                addUsed = false;
+                y = double.Parse(displayOP.Text);
+                memory = MemulatorHelper.Addition(memory, y);
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = memory.ToString();
+            }
+
+            mulUsed = true;
+            //Amennyiben megcsináltad a többi műveletet, rakd itt false-ra
+            if (!secondState)
+            {
+                memory = double.Parse(displayOP.Text);
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = memory.ToString();
+                mulUsed = true;
+                secondState = true;
+                return;
+            }
+            if (secondState)
+            {
+                y = double.Parse(displayOP.Text);
+                memory = MemulatorHelper.Multiply(memory, y);
+                chars.Clear();
+                displayOP.Text = "0";
+                chars.Add("0");
+                displayEQ.Text = memory.ToString();
+                return;
+            }
 
         }
     }

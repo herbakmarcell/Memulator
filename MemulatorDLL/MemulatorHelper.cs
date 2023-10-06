@@ -45,7 +45,7 @@ namespace MemulatorDLL
             return value;
         }
 
-        public double Multiply(double x, double y)
+        public static double Multiply(double x, double y)
         {
             double value = 0;
             value = x * y;
