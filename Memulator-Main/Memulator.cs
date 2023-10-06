@@ -134,16 +134,14 @@ namespace Memulator_Main
             displayOP.Text += "0";
         }
 
-        // Verzió 0.4 - Marci - Egész számokra működik
+        // Verzió 0.4.1 - Barnabás - Egész számokra működik
         private void plus_Click(object sender, EventArgs e)
         {
             addUsed = true;
+            //Amennyiben megcsináltad a többi műveletet, rakd itt false-ra
             if (!secondState)
             {
-                if (displayOP.Text == "")
-                {
-                    return;
-                }
+                
                 memory = double.Parse(displayOP.Text);
                 chars.Clear();
                 displayOP.Text = "0";
@@ -213,6 +211,19 @@ namespace Memulator_Main
         private void squareroot_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void allclear_Click(object sender, EventArgs e)
+        {
+            memory = 0;
+            y = 0;
+            displayEQ.Text = "";
+            chars.Clear();
+            displayOP.Text = "0";
+            chars.Add("0");
+            secondState = false;
+            addUsed = false;
+            //Amennyiben megcsináltad a többi műveletet írd a state-jét ide
         }
     }
 }
