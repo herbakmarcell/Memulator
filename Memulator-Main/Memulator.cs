@@ -325,6 +325,18 @@ namespace Memulator_Main
                     memory = MemulatorHelper.Sqrt(memory);
                     operation = "";
                     break;
+                case "!":
+                    memory = MemulatorHelper.Factorial((long)(memory));
+                    operation = "";
+                    break;
+                case "log":
+                    memory = MemulatorHelper.LogXY((long)(memory),y);
+                    operation = "";
+                    break;
+                case "pow":
+                    memory = MemulatorHelper.Power((long)(memory), y);
+                    operation = "";
+                    break;
                 case "/":
                     if (y==0)
                     {
@@ -388,6 +400,8 @@ namespace Memulator_Main
 
         }
 
+        // Levi: Faktoriális számolásnál, ha egy eredményt(=) szeretnél faktorializálni,  megnyomod a !, utána megint =. 
+
         private void squareroot_Click(object sender, EventArgs e)
         {
             if (error)
@@ -406,7 +420,7 @@ namespace Memulator_Main
 
             if (!equalUsed)
             {
-                memory = MemulatorHelper.Sqrt(double.Parse(displayOP.Text));
+                memory = double.Parse(displayOP.Text);
             }
 
             displayEQ.Text = memory.ToString();
@@ -515,6 +529,8 @@ namespace Memulator_Main
             }
         }
 
+
+        // Levi: Faktoriális számolásnál, ha egy eredményt(=) szeretnél faktorializálni, megnyomod a sqrt, utána megint =. 
         private void factorial_Click(object sender, EventArgs e)
         {
             if (error)
@@ -533,11 +549,66 @@ namespace Memulator_Main
 
             if (!equalUsed)
             {
-                memory = MemulatorHelper.Factorial(long.Parse(displayOP.Text));
+                memory = double.Parse(displayOP.Text);
             }
 
             displayEQ.Text = memory.ToString();
             displayOP.Text = memory.ToString();
+        }
+
+        private void logxy_Click(object sender, EventArgs e)
+        {
+            if (error)
+            {
+                return;
+            }
+            if (operation == "log")
+            {
+                memory = MemulatorHelper.LogXY(memory, double.Parse(displayOP.Text));
+                displayEQ.Text = memory.ToString();
+                displayOP.Text = "0";
+                return;
+            }
+
+            operation = "log";
+
+            if (!equalUsed)
+            {
+                memory = double.Parse(displayOP.Text);
+            }
+
+            displayEQ.Text = memory.ToString();
+            displayOP.Text = "0";
+        }
+
+        private void pow_Click(object sender, EventArgs e)
+        {
+            if (error)
+            {
+                return;
+            }
+            if (operation == "pow")
+            {
+                memory = MemulatorHelper.Power(memory, double.Parse(displayOP.Text));
+                displayEQ.Text = memory.ToString();
+                displayOP.Text = "0";
+                return;
+            }
+
+            operation = "pow";
+
+            if (!equalUsed)
+            {
+                memory = double.Parse(displayOP.Text);
+            }
+
+            displayEQ.Text = memory.ToString();
+            displayOP.Text = "0";
+        }
+
+        private void Mode_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

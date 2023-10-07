@@ -75,21 +75,21 @@ namespace MemulatorDLL
             return value;
         }
 
-        public double Power(double x, double y)
+        public static double Power(double x, double y)
         {
             double value = 0;
             value = Math.Pow(x, y);
             return value;
         }
 
-        public double LogXY(double x, double y)
+        public static double LogXY(double x, double y)
         {
             double value = 0;
             value = Math.Log(y,x);
             return value;
         }
 
-        public double PrefixChanger(double x)
+        public static double PrefixChanger(double x)
         {
             double value = x;
             value *= -1;

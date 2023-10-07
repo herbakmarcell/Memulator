@@ -273,6 +273,7 @@
             this.Mode.TabIndex = 32;
             this.Mode.Text = "Mode";
             this.Mode.UseVisualStyleBackColor = false;
+            this.Mode.Click += new System.EventHandler(this.Mode_Click);
             // 
             // logxy
             // 
@@ -282,6 +283,7 @@
             this.logxy.TabIndex = 54;
             this.logxy.Text = "logxY";
             this.logxy.UseVisualStyleBackColor = true;
+            this.logxy.Click += new System.EventHandler(this.logxy_Click);
             // 
             // pow
             // 
@@ -291,6 +293,7 @@
             this.pow.TabIndex = 55;
             this.pow.Text = "Pow";
             this.pow.UseVisualStyleBackColor = true;
+            this.pow.Click += new System.EventHandler(this.pow_Click);
             // 
             // displayOP
             // 
