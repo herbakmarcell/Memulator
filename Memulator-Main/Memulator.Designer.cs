@@ -63,6 +63,7 @@
             this.factorial.TabIndex = 53;
             this.factorial.Text = "!x";
             this.factorial.UseVisualStyleBackColor = true;
+            this.factorial.Click += new System.EventHandler(this.factorial_Click);
             // 
             // squareroot
             // 

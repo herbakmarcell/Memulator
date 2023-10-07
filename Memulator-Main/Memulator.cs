@@ -321,6 +321,10 @@ namespace Memulator_Main
                     memory = MemulatorHelper.Multiply(memory, y);
                     operation = "";
                     break;
+                case "sqrt":
+                    memory = MemulatorHelper.Sqrt(memory);
+                    operation = "";
+                    break;
                 case "/":
                     if (y==0)
                     {
@@ -386,7 +390,27 @@ namespace Memulator_Main
 
         private void squareroot_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
+            if (operation == "sqrt")
+            {
+                memory = MemulatorHelper.Sqrt(double.Parse(displayOP.Text));
+                displayEQ.Text = memory.ToString();
+                displayOP.Text = "0";
+                return;
+            }
 
+            operation = "sqrt";
+
+            if (!equalUsed)
+            {
+                memory = MemulatorHelper.Sqrt(double.Parse(displayOP.Text));
+            }
+
+            displayEQ.Text = memory.ToString();
+            displayOP.Text = memory.ToString();
         }
 
         private void allclear_Click(object sender, EventArgs e)
@@ -489,6 +513,31 @@ namespace Memulator_Main
             {
                 displayOP.Text = "0";
             }
+        }
+
+        private void factorial_Click(object sender, EventArgs e)
+        {
+            if (error)
+            {
+                return;
+            }
+            if (operation == "!")
+            {
+                memory = MemulatorHelper.Factorial(long.Parse(displayOP.Text));
+                displayEQ.Text = memory.ToString();
+                displayOP.Text = "0";
+                return;
+            }
+
+            operation = "!";
+
+            if (!equalUsed)
+            {
+                memory = MemulatorHelper.Factorial(long.Parse(displayOP.Text));
+            }
+
+            displayEQ.Text = memory.ToString();
+            displayOP.Text = memory.ToString();
         }
     }
 }

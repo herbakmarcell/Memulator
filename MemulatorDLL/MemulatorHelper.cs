@@ -60,7 +60,7 @@ namespace MemulatorDLL
             return value;
         }
 
-        public long Factorial(long x)
+        public static long Factorial(long x)
         {
             if (x == 0)
             {
