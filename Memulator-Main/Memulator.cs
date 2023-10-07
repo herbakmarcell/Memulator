@@ -23,6 +23,7 @@ namespace Memulator_Main
         double y = 0; // Second argument (if needed)
         string operation = "";
         bool equalUsed = false;
+        bool error = false;
 
         // Saved for backtrack purposes
         //bool secondState = false; // Used by operators with 2 arguments
@@ -32,6 +33,10 @@ namespace Memulator_Main
 
         private void num0_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             if (displayOP.Text == "0")
             {
                 return;
@@ -54,6 +59,10 @@ namespace Memulator_Main
         // Verzió 1.2 - Marci - Egész számokra működik
         private void num1_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             if (displayOP.Text == "0")
             {
                 displayOP.Text = "1";
@@ -85,6 +94,10 @@ namespace Memulator_Main
 
         private void num2_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             if (displayOP.Text == "0")
             {
                 displayOP.Text = "2";
@@ -95,6 +108,10 @@ namespace Memulator_Main
 
         private void num3_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             if (displayOP.Text == "0")
             {
                 displayOP.Text = "3";
@@ -105,6 +122,10 @@ namespace Memulator_Main
 
         private void num4_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             if (displayOP.Text == "0")
             {
                 displayOP.Text = "4";
@@ -115,6 +136,10 @@ namespace Memulator_Main
 
         private void num5_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             if (displayOP.Text == "0")
             {
                 displayOP.Text = "5";
@@ -125,6 +150,10 @@ namespace Memulator_Main
 
         private void num6_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             if (displayOP.Text == "0")
             {
                 displayOP.Text = "6";
@@ -135,6 +164,10 @@ namespace Memulator_Main
 
         private void num7_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             if (displayOP.Text == "0")
             {
                 displayOP.Text = "7";
@@ -145,6 +178,10 @@ namespace Memulator_Main
 
         private void num8_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             if (displayOP.Text == "0")
             {
                 displayOP.Text = "8";
@@ -155,6 +192,10 @@ namespace Memulator_Main
 
         private void num9_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             if (displayOP.Text == "0")
             {
                 displayOP.Text = "9";
@@ -166,6 +207,10 @@ namespace Memulator_Main
         // Verzió 0.6 - Marci - Újragondolva (Aludtam rá 8+2 órát)
         private void plus_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             if (operation == "+")
             {
                 memory = MemulatorHelper.Addition(memory, double.Parse(displayOP.Text));
@@ -229,6 +274,10 @@ namespace Memulator_Main
 
         private void minus_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             if (operation == "-")
             {
                 memory = MemulatorHelper.Subtract(memory, double.Parse(displayOP.Text));
@@ -251,6 +300,10 @@ namespace Memulator_Main
         // Verzió 0.5 - Marci - Működő összeadás
         private void equals_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             equalUsed = true;
             y = double.Parse(displayOP.Text);
 
@@ -266,6 +319,17 @@ namespace Memulator_Main
                     break;
                 case "*":
                     memory = MemulatorHelper.Multiply(memory, y);
+                    operation = "";
+                    break;
+                case "/":
+                    if (y==0)
+                    {
+                        displayEQ.Text = "MATH ERROR!";
+                        displayOP.Text = "Press AC";
+                        error = true;
+                        return;
+                    }
+                    memory = MemulatorHelper.Division(memory,y);
                     operation = "";
                     break;
                 default:
@@ -327,6 +391,7 @@ namespace Memulator_Main
 
         private void allclear_Click(object sender, EventArgs e)
         {
+            error = false;
             memory = 0;
             displayEQ.Text = "";
             y = 0;
@@ -344,6 +409,10 @@ namespace Memulator_Main
 
         private void multiply_Click(object sender, EventArgs e)
         {
+            if (error)
+            {
+                return;
+            }
             if (operation == "*")
             {
                 memory = MemulatorHelper.Multiply(memory, double.Parse(displayOP.Text));
@@ -369,7 +438,40 @@ namespace Memulator_Main
 
         private void division_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void division_Click_1(object sender, EventArgs e)
+        {
+            if (error)
+            {
+                return;
+            }
+            if (operation == "/")
+            {
+                if (double.Parse(displayOP.Text)==0)
+                {
+                    displayEQ.Text = "MATH ERROR!";
+                    displayOP.Text = "Press AC";
+                    error = true;
+                    return;
+
+                }
+                memory = MemulatorHelper.Division(memory, double.Parse(displayOP.Text));
+                displayEQ.Text = memory.ToString();
+                displayOP.Text = "0";
+                return;
+            }
+
+            operation = "/";
+
+            if (!equalUsed)
+            {
+                memory = double.Parse(displayOP.Text);
+            }
+
+            displayEQ.Text = memory.ToString();
+            displayOP.Text = "0";
         }
     }
 }

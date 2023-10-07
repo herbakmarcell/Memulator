@@ -38,7 +38,7 @@ namespace MemulatorDLL
         }
 
 
-        public double Division(double x, double y)
+        public static double Division(double x, double y)
         {
             double value = 0;
             value = x / y;
