@@ -179,16 +179,70 @@ namespace Memulator_Main
 
         private void num7_Click(object sender, EventArgs e)
         {
+            if (chars.Count == 0)
+            {
+                chars.Add("7");
+                displayOP.Text += "7";
+                return;
+            }
+            else if (chars[0] == "0")
+            {
+                chars.RemoveAt(0);
+                displayOP.Text = "";
+                chars.Add("7");
+                foreach (var chara in chars)
+                {
+                    displayOP.Text += chara;
+                }
+                return;
+            }
+            chars.Add("7");
             displayOP.Text += "7";
         }
 
         private void num8_Click(object sender, EventArgs e)
         {
+            if (chars.Count == 0)
+            {
+                chars.Add("8");
+                displayOP.Text += "8";
+                return;
+            }
+            else if (chars[0] == "0")
+            {
+                chars.RemoveAt(0);
+                displayOP.Text = "";
+                chars.Add("8");
+                foreach (var chara in chars)
+                {
+                    displayOP.Text += chara;
+                }
+                return;
+            }
+            chars.Add("8");
             displayOP.Text += "8";
         }
 
         private void num9_Click(object sender, EventArgs e)
         {
+            if (chars.Count == 0)
+            {
+                chars.Add("9");
+                displayOP.Text += "9";
+                return;
+            }
+            else if (chars[0] == "0")
+            {
+                chars.RemoveAt(0);
+                displayOP.Text = "";
+                chars.Add("9");
+                foreach (var chara in chars)
+                {
+                    displayOP.Text += chara;
+                }
+                return;
+            }
+            chars.Add("9");
             displayOP.Text += "9";
         }
         // Verzió 1.3 - Marci - Egész számokra működik
