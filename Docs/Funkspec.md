@@ -49,9 +49,7 @@ A számológépünk nem sokkal különbözik az alapmodelltől, műveletei tarta
 
 ## 6. Használati esetek
 
-1. Felhasználó számolása: A felhasználó a képernyőablakon megjelenő gombok segítségével ki tudja választani,
-2.  hogy melyik matematikai műveletet szeretné elvégezni.
-3. Eredmény kiírása a képernyőre: A program a háttérben a felhasználó által meghívott matematikai műveletet végrehajtja.
+A felhasználó a képernyőablakon megjelenő gombok segítségével ki tudja választani, hogy melyik matematikai műveletet szeretné elvégezni. A program a háttérben a felhasználó által meghívott matematikai műveletet végrehajtja és kiírja a képernyőre. Ezzel ezután a felhasználó tovább számolhat, vagy törölheti a memóriából ízlés szerint.
 
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
 |ID|Leírás           |
