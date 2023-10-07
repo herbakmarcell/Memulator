@@ -102,6 +102,7 @@
             this.del.TabIndex = 49;
             this.del.Text = "DEL";
             this.del.UseVisualStyleBackColor = true;
+            this.del.Click += new System.EventHandler(this.del_Click);
             // 
             // allclear
             // 

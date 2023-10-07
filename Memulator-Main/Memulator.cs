@@ -473,5 +473,22 @@ namespace Memulator_Main
             displayEQ.Text = memory.ToString();
             displayOP.Text = "0";
         }
+
+        private void del_Click(object sender, EventArgs e)
+        {
+            if (error)
+            {
+                return;
+            }
+            if (displayOP.Text=="" || displayOP.Text=="0")
+            {
+                return;
+            }
+            displayOP.Text = displayOP.Text.Substring(0, displayOP.Text.Length - 1);
+            if (displayOP.Text=="")
+            {
+                displayOP.Text = "0";
+            }
+        }
     }
 }
