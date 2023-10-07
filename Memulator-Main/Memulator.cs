@@ -85,42 +85,82 @@ namespace Memulator_Main
 
         private void num2_Click(object sender, EventArgs e)
         {
-           
+            if (displayOP.Text == "0")
+            {
+                displayOP.Text = "2";
+                return;
+            }
+            displayOP.Text += "2";
         }
 
         private void num3_Click(object sender, EventArgs e)
         {
-           
+            if (displayOP.Text == "0")
+            {
+                displayOP.Text = "3";
+                return;
+            }
+            displayOP.Text += "3";
         }
 
         private void num4_Click(object sender, EventArgs e)
         {
-           
+            if (displayOP.Text == "0")
+            {
+                displayOP.Text = "4";
+                return;
+            }
+            displayOP.Text += "4";
         }
 
         private void num5_Click(object sender, EventArgs e)
         {
-            
+            if (displayOP.Text == "0")
+            {
+                displayOP.Text = "5";
+                return;
+            }
+            displayOP.Text += "5";
         }
 
         private void num6_Click(object sender, EventArgs e)
         {
-            
+            if (displayOP.Text == "0")
+            {
+                displayOP.Text = "6";
+                return;
+            }
+            displayOP.Text += "6";
         }
 
         private void num7_Click(object sender, EventArgs e)
         {
-
+            if (displayOP.Text == "0")
+            {
+                displayOP.Text = "7";
+                return;
+            }
+            displayOP.Text += "7";
         }
 
         private void num8_Click(object sender, EventArgs e)
         {
-            
+            if (displayOP.Text == "0")
+            {
+                displayOP.Text = "8";
+                return;
+            }
+            displayOP.Text += "8";
         }
 
         private void num9_Click(object sender, EventArgs e)
         {
-           
+            if (displayOP.Text == "0")
+            {
+                displayOP.Text = "9";
+                return;
+            }
+            displayOP.Text += "9";
         }
 
         // Verzió 0.6 - Marci - Újragondolva (Aludtam rá 8+2 órát)
