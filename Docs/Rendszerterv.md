@@ -42,7 +42,12 @@ A Kézifék E. Inc. azt a megbízást kapta, hogy segítsék a kisiskolásokat a
 
    
 ### 2.4 Mérföldkövek
-   *   Prototípus prezentálása
+   *   09.24. Követelmény specifikáció elkészítése
+   *   09.27. Funkcionális specifikáció elkészítése
+   *   09.30. Rendszerterv elkészítése
+   *   10.07. Back- és Front-end elkészítése
+   *   10.08. Előzetes tesztelések és prototípus elkészítése
+   *   10.11. Prototípus prezentálása
    
 ## 3. Üzleti folyamatok modellje
 
