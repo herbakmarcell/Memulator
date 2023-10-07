@@ -133,11 +133,47 @@ namespace Memulator_Main
 
         private void num5_Click(object sender, EventArgs e)
         {
+            if (chars.Count == 0)
+            {
+                chars.Add("5");
+                displayOP.Text += "5";
+                return;
+            }
+            else if (chars[0] == "0")
+            {
+                chars.RemoveAt(0);
+                displayOP.Text = "";
+                chars.Add("5");
+                foreach (var chara in chars)
+                {
+                    displayOP.Text += chara;
+                }
+                return;
+            }
+            chars.Add("5");
             displayOP.Text += "5";
         }
 
         private void num6_Click(object sender, EventArgs e)
         {
+            if (chars.Count == 0)
+            {
+                chars.Add("6");
+                displayOP.Text += "6";
+                return;
+            }
+            else if (chars[0] == "0")
+            {
+                chars.RemoveAt(0);
+                displayOP.Text = "";
+                chars.Add("6");
+                foreach (var chara in chars)
+                {
+                    displayOP.Text += chara;
+                }
+                return;
+            }
+            chars.Add("6");
             displayOP.Text += "6";
         }
 
