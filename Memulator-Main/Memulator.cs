@@ -17,6 +17,7 @@ namespace Memulator_Main
         public Memulator()
         {
             InitializeComponent();
+            pictureBox3.Visible = false;
             num0.BackColor = DefaultBackColor;
             num1.BackColor = DefaultBackColor;
             num2.BackColor = DefaultBackColor;
@@ -365,8 +366,21 @@ namespace Memulator_Main
                     operation = "";
                     break;
                 case "/":
-                    if (y==0)
+                    if (y == 0)
                     {
+                        if (isModeOn)
+                        {
+                            pictureBox3.Visible = true;
+                            pictureBox3.Refresh();
+                            pictureBox3.Image = Properties.Resources.nulladiv;
+                            pictureBox3.BringToFront();
+                            SoundPlayer nullaoszt = new SoundPlayer(Properties.Resources.nulladiv1);
+                            nullaoszt.Play();
+                            displayEQ.Text = "MATH ERROR!";
+                            displayOP.Text = "Press AC";
+                            error = true;
+                            return;
+                        }
                         displayEQ.Text = "MATH ERROR!";
                         displayOP.Text = "Press AC";
                         error = true;
@@ -506,7 +520,8 @@ namespace Memulator_Main
             displayOP.Text = "0";
             operation = "";
             equalUsed = false;
-
+            pictureBox3.Visible = false;
+            pictureBox3.Refresh();
 
             //secondState = false;
             ////Amennyiben megcsináltad a többi műveletet írd a state-jét ide
@@ -557,17 +572,11 @@ namespace Memulator_Main
             }
             if (operation == "/")
             {
-                if (double.Parse(displayOP.Text) == 0 && isModeOn == true)
-                {
-
-                }
-
                 if (double.Parse(displayOP.Text)==0)
                 {
                     
                     displayEQ.Text = "MATH ERROR!";
                     displayOP.Text = "Press AC";
-
                     error = true;
                     return;
 
@@ -687,6 +696,7 @@ namespace Memulator_Main
         {
             if (!isModeOn)
             {
+                pictureBox3.Visible = false;
                 isModeOn = true;
                 pictureBox1.Image = Properties.Resources.frogkicsi;
                 pictureBox1.BringToFront();
@@ -724,6 +734,8 @@ namespace Memulator_Main
             }
             else
             {
+                pictureBox3.Visible = false;
+                pictureBox3.Refresh();
                 isModeOn = false;
                 pictureBox1.Image = null;
                 pictureBox2.Image = null;
@@ -770,13 +782,17 @@ namespace Memulator_Main
             {
                 SoundPlayer sound3 = new SoundPlayer(Properties.Resources.rickroll);
                 sound3.Play();
+                pictureBox3.Image = Properties.Resources.rickroll1;
+                pictureBox3.Visible = true;
+                pictureBox3.Refresh();
             }
-            else
+            DialogResult msg = MessageBox.Show("KAJAKRA KILÉPSZ?", "NEMAR MORE", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (msg.Equals(DialogResult.Yes))
             {
                 Application.Exit();
             }
-           
-            
+
+
         }
     }
 }

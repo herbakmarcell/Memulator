@@ -157,6 +157,15 @@ namespace Memulator_Main.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream nulladiv1 {
+            get {
+                return ResourceManager.GetStream("nulladiv1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream ot5 {
             get {
                 return ResourceManager.GetStream("ot5", resourceCulture);
@@ -187,6 +196,16 @@ namespace Memulator_Main.Properties {
         internal static System.IO.UnmanagedMemoryStream rickroll {
             get {
                 return ResourceManager.GetStream("rickroll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rickroll1 {
+            get {
+                object obj = ResourceManager.GetObject("rickroll1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

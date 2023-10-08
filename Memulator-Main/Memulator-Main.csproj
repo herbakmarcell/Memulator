@@ -140,5 +140,14 @@
   <ItemGroup>
     <None Include="sounds\maxver.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\nulladiv.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\nineeleven.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\rickroll.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
