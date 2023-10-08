@@ -134,5 +134,8 @@
   <ItemGroup>
     <None Include="sounds\weed.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\over9k.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

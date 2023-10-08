@@ -391,8 +391,24 @@ namespace Memulator_Main
                         sound5.Play();
                         break;
                     case 42:
-                        SoundPlayer sound6 = new SoundPlayer(Properties.Resources.prophecy);
-                        sound6.Play();
+                        SoundPlayer sound42 = new SoundPlayer(Properties.Resources.prophecy);
+                        sound42.Play();
+                        break;
+                    case 69:
+                        SoundPlayer sound69 = new SoundPlayer(Properties.Resources.nice);
+                        sound69.Play();
+                        break;
+                    case 317:
+                        SoundPlayer sound317 = new SoundPlayer(Properties.Resources.smurfcat);
+                        sound317.Play();
+                        break;
+                    case 420:
+                        SoundPlayer sound420 = new SoundPlayer(Properties.Resources.weed);
+                        sound420.Play();
+                        break;
+                    case 9001:
+                        SoundPlayer sound9001 = new SoundPlayer(Properties.Resources.over9k);
+                        sound9001.Play();
                         break;
                     default:
                         break;

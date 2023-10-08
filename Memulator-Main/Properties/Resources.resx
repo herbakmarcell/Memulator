@@ -145,6 +145,9 @@
   <data name="ot5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\ot5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="over9k" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\over9k.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="prophecy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\prophecy.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
