@@ -121,6 +121,9 @@
   <data name="csiribu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\csiribu.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="four" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\four.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="frogkicsi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\frogkicsi.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,7 +133,34 @@
   <data name="hatter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\hatter.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="nice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\nice.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="normalmode" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\normalmode.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nulladiv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\nulladiv.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ot5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\ot5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="prophecy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\prophecy.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rickroll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\rickroll.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="smurfcat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\smurfcat.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="thefuck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\thefuck.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ustupid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\ustupid.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="weed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\weed.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

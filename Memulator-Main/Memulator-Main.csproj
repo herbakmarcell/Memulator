@@ -101,5 +101,38 @@
   <ItemGroup>
     <None Include="images\frogkicsi.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\matematikus-lölő.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nulladiv.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\four.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\nice.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\ot5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\prophecy.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\rickroll.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\smurfcat.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\thefuck.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\ustupid.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\weed.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

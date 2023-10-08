@@ -39,6 +39,7 @@ namespace Memulator_Main
             logxy.BackColor = DefaultBackColor;
             factorial.BackColor = DefaultBackColor;
             pow.BackColor = DefaultBackColor;
+            exit.BackColor = DefaultBackColor;
             Mode.BackColor = Color.FromArgb(255, 0, 0);
 
             displayOP.Text = "0"; // Default value            
@@ -377,16 +378,26 @@ namespace Memulator_Main
                 default:
                     break;
             }
-            //if (isModeOn)
-            //{
-            //    switch (memory)
-            //    {
-            //        case 42:
-
-            //        default:
-            //            break;
-            //    }
-            //}
+            if (isModeOn)
+            {
+                switch (memory)
+                {
+                    case 4:
+                        SoundPlayer sound4 = new SoundPlayer(Properties.Resources.four);
+                        sound4.Play();
+                        break;
+                    case 5:
+                        SoundPlayer sound5 = new SoundPlayer(Properties.Resources.ot5);
+                        sound5.Play();
+                        break;
+                    case 42:
+                        SoundPlayer sound6 = new SoundPlayer(Properties.Resources.prophecy);
+                        sound6.Play();
+                        break;
+                    default:
+                        break;
+                }
+            }
             displayEQ.Text = memory.ToString();
             displayOP.Text = "0";
 
@@ -522,14 +533,22 @@ namespace Memulator_Main
             }
             if (operation == "/")
             {
+                if (double.Parse(displayOP.Text) == 0 && isModeOn == true)
+                {
+
+                }
+
                 if (double.Parse(displayOP.Text)==0)
                 {
+                    
                     displayEQ.Text = "MATH ERROR!";
                     displayOP.Text = "Press AC";
+
                     error = true;
                     return;
 
                 }
+                
                 memory = MemulatorHelper.Division(memory, double.Parse(displayOP.Text));
                 displayEQ.Text = memory.ToString();
                 displayOP.Text = "0";
@@ -646,9 +665,9 @@ namespace Memulator_Main
             {
                 isModeOn = true;
                 pictureBox1.Image = Properties.Resources.frogkicsi;
-                pictureBox1.SendToBack();
+                pictureBox1.BringToFront();
                 pictureBox2.Image = Properties.Resources.frogkicsiright;
-                pictureBox2.SendToBack();
+                pictureBox2.BringToFront();
                 Memulator.ActiveForm.BackgroundImage = Properties.Resources.hatter;
                 SoundPlayer sound = new SoundPlayer(Properties.Resources.csiribu);
                 sound.Play();
@@ -674,6 +693,7 @@ namespace Memulator_Main
                 logxy.BackColor = Color.FromArgb(153, 204, 255);
                 factorial.BackColor = Color.FromArgb(153, 204, 255);
                 pow.BackColor = Color.FromArgb(153, 204, 255);
+                exit.BackColor = Color.FromArgb(153, 204, 255);
                 displayEQ.BackColor = Color.FromArgb(204, 255, 255);
                 displayOP.BackColor = Color.FromArgb(204, 255, 255);
                 Mode.BackColor = Color.FromArgb(51, 255, 51);
@@ -710,6 +730,7 @@ namespace Memulator_Main
                 pow.BackColor = DefaultBackColor;
                 displayEQ.BackColor = DefaultBackColor;
                 displayOP.BackColor = DefaultBackColor;
+                exit.BackColor = DefaultBackColor;
                 Mode.BackColor = Color.FromArgb(255, 0, 0);
             }
         }
@@ -717,6 +738,21 @@ namespace Memulator_Main
         private void Mode_Click(object sender, EventArgs e)
         {
             checkMainMode();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            if (isModeOn)
+            {
+                SoundPlayer sound3 = new SoundPlayer(Properties.Resources.rickroll);
+                sound3.Play();
+            }
+            else
+            {
+                Application.Exit();
+            }
+           
+            
         }
     }
 }
