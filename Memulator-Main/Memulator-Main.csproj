@@ -137,5 +137,8 @@
   <ItemGroup>
     <None Include="sounds\over9k.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\maxver.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

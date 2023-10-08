@@ -382,6 +382,10 @@ namespace Memulator_Main
             {
                 switch (memory)
                 {
+                    case 1:
+                        SoundPlayer sound1 = new SoundPlayer(Properties.Resources.maxver);
+                        sound1.Play();
+                        break;
                     case 4:
                         SoundPlayer sound4 = new SoundPlayer(Properties.Resources.four);
                         sound4.Play();
@@ -405,6 +409,10 @@ namespace Memulator_Main
                     case 420:
                         SoundPlayer sound420 = new SoundPlayer(Properties.Resources.weed);
                         sound420.Play();
+                        break;
+                    case 911:
+                        SoundPlayer sound911 = new SoundPlayer(Properties.Resources.nineeleven);
+                        sound911.Play();
                         break;
                     case 9001:
                         SoundPlayer sound9001 = new SoundPlayer(Properties.Resources.over9k);
