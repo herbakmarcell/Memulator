@@ -62,7 +62,7 @@
             this.factorial.Name = "factorial";
             this.factorial.Size = new System.Drawing.Size(50, 50);
             this.factorial.TabIndex = 53;
-            this.factorial.Text = "!x";
+            this.factorial.Text = "x!";
             this.factorial.UseVisualStyleBackColor = true;
             this.factorial.Click += new System.EventHandler(this.factorial_Click);
             // 
