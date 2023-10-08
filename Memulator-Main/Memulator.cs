@@ -24,6 +24,7 @@ namespace Memulator_Main
         string operation = "";
         bool equalUsed = false;
         bool error = false;
+        bool isModeOn = false;
 
         // Saved for backtrack purposes
         //bool secondState = false; // Used by operators with 2 arguments
@@ -608,7 +609,14 @@ namespace Memulator_Main
 
         private void Mode_Click(object sender, EventArgs e)
         {
-
+            if (isModeOn == false)
+            {
+                isModeOn = true;
+            }
+            else
+            {
+                isModeOn = false;
+            }
         }
     }
 }
