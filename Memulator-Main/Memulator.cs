@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Memulator_Main
 {
@@ -606,16 +607,22 @@ namespace Memulator_Main
             displayEQ.Text = memory.ToString();
             displayOP.Text = "0";
         }
-
+        
         private void Mode_Click(object sender, EventArgs e)
         {
             if (isModeOn == false)
             {
                 isModeOn = true;
+                Memulator.ActiveForm.BackgroundImage = Properties.Resources.hatter;
+                SoundPlayer sound = new SoundPlayer(Properties.Resources.csiribu);
+                sound.Play();
             }
             else
             {
                 isModeOn = false;
+                Memulator.ActiveForm.BackgroundImage = null;
+                SoundPlayer sound2 = new SoundPlayer(Properties.Resources.normalmode);
+                sound2.Play();
             }
         }
     }

@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -84,6 +85,15 @@
       <Project>{edbcd2a8-6c1d-4af9-b286-f748ea268175}</Project>
       <Name>MemulatorDLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\hatter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\csiribu.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\normalmode.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
