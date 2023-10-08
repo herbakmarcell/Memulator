@@ -645,6 +645,10 @@ namespace Memulator_Main
             if (!isModeOn)
             {
                 isModeOn = true;
+                pictureBox1.Image = Properties.Resources.frogkicsi;
+                pictureBox1.SendToBack();
+                pictureBox2.Image = Properties.Resources.frogkicsiright;
+                pictureBox2.SendToBack();
                 Memulator.ActiveForm.BackgroundImage = Properties.Resources.hatter;
                 SoundPlayer sound = new SoundPlayer(Properties.Resources.csiribu);
                 sound.Play();
@@ -677,6 +681,8 @@ namespace Memulator_Main
             else
             {
                 isModeOn = false;
+                pictureBox1.Image = null;
+                pictureBox2.Image = null;
                 Memulator.ActiveForm.BackgroundImage = null;
                 SoundPlayer sound2 = new SoundPlayer(Properties.Resources.normalmode);
                 sound2.Play();

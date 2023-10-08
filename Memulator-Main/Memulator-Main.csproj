@@ -95,5 +95,11 @@
   <ItemGroup>
     <None Include="sounds\normalmode.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\frogkicsiright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\frogkicsi.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

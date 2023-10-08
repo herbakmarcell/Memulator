@@ -72,6 +72,26 @@ namespace Memulator_Main.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap frogkicsi {
+            get {
+                object obj = ResourceManager.GetObject("frogkicsi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap frogkicsiright {
+            get {
+                object obj = ResourceManager.GetObject("frogkicsiright", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hatter {
             get {
                 object obj = ResourceManager.GetObject("hatter", resourceCulture);
