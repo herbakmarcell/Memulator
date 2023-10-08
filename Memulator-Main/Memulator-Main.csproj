@@ -102,9 +102,6 @@
     <None Include="images\frogkicsi.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="images\matematikus-lölő.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="images\nulladiv.gif" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +145,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\rickroll.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\bidesz.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\orbiwalk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\herekopterWA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\smokeweed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\welie.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nice.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\fersdaben.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\jhinZao.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\numero5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\42.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nothing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\89.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\bingchilling.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\bingchilling.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\peppino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sounds\taunt.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

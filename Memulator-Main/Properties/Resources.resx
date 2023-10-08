@@ -118,8 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bidesz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\bidesz.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bingchilling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\bingchilling.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bingchilling1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\bingchilling.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="csiribu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\csiribu.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fersdaben" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\fersdaben.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="four" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\four.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -133,11 +145,20 @@
   <data name="hatter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\hatter.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="herekopterWA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\herekopterWA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jhinZao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\jhinZao.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="maxver" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\maxver.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="nice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\nice.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nice1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\nice.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nineeleven" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\nineeleven.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -145,17 +166,32 @@
   <data name="normalmode" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\normalmode.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="nothing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\nothing.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="nulladiv" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\nulladiv.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nulladiv1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\nulladiv.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="numero5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\numero5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="orbiwalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\orbiwalk.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ot5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\ot5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="over9k" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\over9k.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="peppino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\peppino.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\pizza.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="prophecy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\prophecy.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -166,8 +202,14 @@
   <data name="rickroll1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\rickroll.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="smokeweed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\smokeweed.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="smurfcat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\smurfcat.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="taunt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\taunt.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="thefuck" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\thefuck.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -177,5 +219,14 @@
   </data>
   <data name="weed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sounds\weed.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="welie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\welie.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\42.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_89" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\sounds\89.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

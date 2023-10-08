@@ -61,11 +61,68 @@ namespace Memulator_Main.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _42 {
+            get {
+                object obj = ResourceManager.GetObject("_42", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _89 {
+            get {
+                return ResourceManager.GetStream("_89", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream bidesz {
+            get {
+                return ResourceManager.GetStream("bidesz", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bingchilling {
+            get {
+                object obj = ResourceManager.GetObject("bingchilling", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream bingchilling1 {
+            get {
+                return ResourceManager.GetStream("bingchilling1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream csiribu {
             get {
                 return ResourceManager.GetStream("csiribu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fersdaben {
+            get {
+                object obj = ResourceManager.GetObject("fersdaben", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -109,6 +166,26 @@ namespace Memulator_Main.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap herekopterWA {
+            get {
+                object obj = ResourceManager.GetObject("herekopterWA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jhinZao {
+            get {
+                object obj = ResourceManager.GetObject("jhinZao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream maxver {
@@ -123,6 +200,16 @@ namespace Memulator_Main.Properties {
         internal static System.IO.UnmanagedMemoryStream nice {
             get {
                 return ResourceManager.GetStream("nice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nice1 {
+            get {
+                object obj = ResourceManager.GetObject("nice1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -147,6 +234,16 @@ namespace Memulator_Main.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nothing {
+            get {
+                object obj = ResourceManager.GetObject("nothing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nulladiv {
             get {
                 object obj = ResourceManager.GetObject("nulladiv", resourceCulture);
@@ -160,6 +257,26 @@ namespace Memulator_Main.Properties {
         internal static System.IO.UnmanagedMemoryStream nulladiv1 {
             get {
                 return ResourceManager.GetStream("nulladiv1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap numero5 {
+            get {
+                object obj = ResourceManager.GetObject("numero5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap orbiwalk {
+            get {
+                object obj = ResourceManager.GetObject("orbiwalk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -178,6 +295,26 @@ namespace Memulator_Main.Properties {
         internal static System.IO.UnmanagedMemoryStream over9k {
             get {
                 return ResourceManager.GetStream("over9k", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap peppino {
+            get {
+                object obj = ResourceManager.GetObject("peppino", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pizza {
+            get {
+                object obj = ResourceManager.GetObject("pizza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -210,11 +347,30 @@ namespace Memulator_Main.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap smokeweed {
+            get {
+                object obj = ResourceManager.GetObject("smokeweed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream smurfcat {
             get {
                 return ResourceManager.GetStream("smurfcat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream taunt {
+            get {
+                return ResourceManager.GetStream("taunt", resourceCulture);
             }
         }
         
@@ -242,6 +398,16 @@ namespace Memulator_Main.Properties {
         internal static System.IO.UnmanagedMemoryStream weed {
             get {
                 return ResourceManager.GetStream("weed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap welie {
+            get {
+                object obj = ResourceManager.GetObject("welie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

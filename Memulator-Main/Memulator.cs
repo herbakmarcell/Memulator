@@ -327,7 +327,7 @@ namespace Memulator_Main
         }
 
         // Verzió 0.5 - Marci - Működő összeadás
-        private void equals_Click(object sender, EventArgs e)
+        private async void equals_Click(object sender, EventArgs e)
         {
             if (error)
             {
@@ -406,38 +406,86 @@ namespace Memulator_Main
                     case 1:
                         SoundPlayer sound1 = new SoundPlayer(Properties.Resources.maxver);
                         sound1.Play();
+                        pictureBox3.Image = Properties.Resources.fersdaben;
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        pictureBox3.Visible = true;
+                        pictureBox3.Refresh();
                         break;
                     case 4:
                         SoundPlayer sound4 = new SoundPlayer(Properties.Resources.four);
                         sound4.Play();
+                        pictureBox3.Image = Properties.Resources.jhinZao;
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        pictureBox3.Visible = true;
+                        pictureBox3.Refresh();
                         break;
                     case 5:
                         SoundPlayer sound5 = new SoundPlayer(Properties.Resources.ot5);
                         sound5.Play();
+                        pictureBox3.Image = Properties.Resources.numero5;
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        pictureBox3.Visible = true;
+                        pictureBox3.Refresh();
                         break;
                     case 42:
                         SoundPlayer sound42 = new SoundPlayer(Properties.Resources.prophecy);
                         sound42.Play();
+                        pictureBox3.Image = Properties.Resources._42;
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        pictureBox3.Visible = true;
+                        pictureBox3.Refresh();
                         break;
                     case 69:
                         SoundPlayer sound69 = new SoundPlayer(Properties.Resources.nice);
                         sound69.Play();
+                        pictureBox3.Image = Properties.Resources.nice1;
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        pictureBox3.Visible = true;
+                        pictureBox3.Refresh();
                         break;
                     case 317:
                         SoundPlayer sound317 = new SoundPlayer(Properties.Resources.smurfcat);
                         sound317.Play();
+                        pictureBox3.Image = Properties.Resources.welie;
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        pictureBox3.Visible = true;
+                        pictureBox3.Refresh();
                         break;
                     case 420:
                         SoundPlayer sound420 = new SoundPlayer(Properties.Resources.weed);
                         sound420.Play();
+                        pictureBox3.Image = Properties.Resources.smokeweed;
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        pictureBox3.Visible = true;
+                        pictureBox3.Refresh();
                         break;
                     case 911:
                         SoundPlayer sound911 = new SoundPlayer(Properties.Resources.nineeleven);
+                        pictureBox3.Image = Properties.Resources.herekopterWA;
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        pictureBox3.Visible = true;
+                        pictureBox3.Refresh();
                         sound911.Play();
+                        break;
+                    case 1989:
+                        SoundPlayer sound1989 = new SoundPlayer(Properties.Resources._89);
+                        pictureBox3.Image = Properties.Resources.nothing;
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        pictureBox3.Visible = true;
+                        pictureBox3.Refresh();
+                        sound1989.Play();
                         break;
                     case 9001:
                         SoundPlayer sound9001 = new SoundPlayer(Properties.Resources.over9k);
                         sound9001.Play();
+                        break;
+                    case (double) 2/3:
+                        SoundPlayer soundBidesz = new SoundPlayer(Properties.Resources.bidesz);
+                        soundBidesz.Play();
+                        pictureBox3.Image = Properties.Resources.orbiwalk;
+                        pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+                        pictureBox3.Visible = true;
+                        pictureBox3.Refresh();
                         break;
                     default:
                         break;
@@ -729,6 +777,8 @@ namespace Memulator_Main
         {
             if (!isModeOn)
             {
+                button1.Visible = true;
+                taunt.Visible = true;
                 pictureBox3.Visible = false;
                 isModeOn = true;
                 pictureBox1.Image = Properties.Resources.frogkicsi;
@@ -762,12 +812,15 @@ namespace Memulator_Main
                 pow.BackColor = Color.FromArgb(153, 204, 255);
                 exit.BackColor = Color.FromArgb(153, 204, 255);
                 plusMinus.BackColor = Color.FromArgb(220, 80, 90);
+                button1.BackColor = Color.FromArgb(255, 153, 255);
                 displayEQ.BackColor = Color.FromArgb(204, 255, 255);
                 displayOP.BackColor = Color.FromArgb(204, 255, 255);
                 Mode.BackColor = Color.FromArgb(51, 255, 51);
             }
             else
             {
+                taunt.Visible = false;
+                button1.Visible = false;
                 pictureBox3.Visible = false;
                 pictureBox3.Refresh();
                 isModeOn = false;
@@ -847,6 +900,28 @@ namespace Memulator_Main
         {
             double temp = double.Parse(displayOP.Text);
             displayOP.Text = (-1 * temp).ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SoundPlayer fagyi = new SoundPlayer(Properties.Resources.bingchilling1);
+            pictureBox3.Image = Properties.Resources.bingchilling;
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.Visible = true;
+            pictureBox3.Refresh();
+            fagyi.Play();
+        }
+
+        private void taunt_Click(object sender, EventArgs e)
+        {
+            Timer timer = new Timer();
+            timer.Interval = 500;
+            SoundPlayer taunt = new SoundPlayer(Properties.Resources.taunt);
+            pictureBox3.Image = Properties.Resources.peppino;
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.Visible = true;
+            pictureBox3.Refresh();
+            taunt.Play();
         }
     }
 }
