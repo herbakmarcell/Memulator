@@ -362,6 +362,7 @@
             this.Controls.Add(this.num7);
             this.Controls.Add(this.Mode);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Memulator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memulator";

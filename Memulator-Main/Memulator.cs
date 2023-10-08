@@ -17,7 +17,30 @@ namespace Memulator_Main
         public Memulator()
         {
             InitializeComponent();
-            displayOP.Text = "0"; // Default value
+            num0.BackColor = DefaultBackColor;
+            num1.BackColor = DefaultBackColor;
+            num2.BackColor = DefaultBackColor;
+            num3.BackColor = DefaultBackColor;
+            num4.BackColor = DefaultBackColor;
+            num5.BackColor = DefaultBackColor;
+            num6.BackColor = DefaultBackColor;
+            num7.BackColor = DefaultBackColor;
+            num8.BackColor = DefaultBackColor;
+            num9.BackColor = DefaultBackColor;
+            dot.BackColor = DefaultBackColor;
+            equals.BackColor = DefaultBackColor;
+            division.BackColor = DefaultBackColor;
+            multiply.BackColor = DefaultBackColor;
+            plus.BackColor = DefaultBackColor;
+            minus.BackColor = DefaultBackColor;
+            allclear.BackColor = DefaultBackColor;
+            del.BackColor = DefaultBackColor;
+            squareroot.BackColor = DefaultBackColor;
+            logxy.BackColor = DefaultBackColor;
+            factorial.BackColor = DefaultBackColor;
+            pow.BackColor = DefaultBackColor;
+
+            displayOP.Text = "0"; // Default value            
         }
 
         double memory = 0; // First argument and requirement for saving the 
@@ -353,7 +376,16 @@ namespace Memulator_Main
                 default:
                     break;
             }
+            //if (isModeOn)
+            //{
+            //    switch (memory)
+            //    {
+            //        case 42:
 
+            //        default:
+            //            break;
+            //    }
+            //}
             displayEQ.Text = memory.ToString();
             displayOP.Text = "0";
 
@@ -615,14 +647,14 @@ namespace Memulator_Main
                 isModeOn = true;
                 Memulator.ActiveForm.BackgroundImage = Properties.Resources.hatter;
                 SoundPlayer sound = new SoundPlayer(Properties.Resources.csiribu);
-                sound.Play();
+                sound.Play();              
             }
             else
             {
                 isModeOn = false;
                 Memulator.ActiveForm.BackgroundImage = null;
                 SoundPlayer sound2 = new SoundPlayer(Properties.Resources.normalmode);
-                sound2.Play();
+                sound2.Play();                
             }
         }
     }
