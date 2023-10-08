@@ -287,7 +287,7 @@
             // 
             // Mode
             // 
-            this.Mode.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Mode.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Mode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Mode.Location = new System.Drawing.Point(29, 163);
             this.Mode.Name = "Mode";

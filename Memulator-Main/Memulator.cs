@@ -39,6 +39,7 @@ namespace Memulator_Main
             logxy.BackColor = DefaultBackColor;
             factorial.BackColor = DefaultBackColor;
             pow.BackColor = DefaultBackColor;
+            Mode.BackColor = Color.FromArgb(255, 0, 0);
 
             displayOP.Text = "0"; // Default value            
         }
@@ -639,23 +640,77 @@ namespace Memulator_Main
             displayEQ.Text = memory.ToString();
             displayOP.Text = "0";
         }
-        
-        private void Mode_Click(object sender, EventArgs e)
+        private void checkMainMode()
         {
-            if (isModeOn == false)
+            if (!isModeOn)
             {
                 isModeOn = true;
                 Memulator.ActiveForm.BackgroundImage = Properties.Resources.hatter;
                 SoundPlayer sound = new SoundPlayer(Properties.Resources.csiribu);
-                sound.Play();              
+                sound.Play();
+                plus.BackColor = Color.FromArgb(153, 255, 153);
+                minus.BackColor = Color.FromArgb(153, 255, 153);
+                multiply.BackColor = Color.FromArgb(153, 255, 153);
+                division.BackColor = Color.FromArgb(153, 255, 153);
+                num6.BackColor = Color.FromArgb(255, 153, 204);
+                num9.BackColor = Color.FromArgb(255, 153, 204);
+                num0.BackColor = Color.FromArgb(153, 204, 255);
+                num1.BackColor = Color.FromArgb(153, 204, 255);
+                num2.BackColor = Color.FromArgb(153, 204, 255);
+                num3.BackColor = Color.FromArgb(153, 204, 255);
+                num4.BackColor = Color.FromArgb(153, 204, 255);
+                num5.BackColor = Color.FromArgb(153, 204, 255);
+                num7.BackColor = Color.FromArgb(153, 204, 255);
+                num8.BackColor = Color.FromArgb(153, 204, 255);
+                dot.BackColor = Color.FromArgb(153, 204, 255);
+                equals.BackColor = Color.FromArgb(153, 204, 255);
+                allclear.BackColor = Color.FromArgb(153, 204, 255);
+                del.BackColor = Color.FromArgb(153, 204, 255);
+                squareroot.BackColor = Color.FromArgb(153, 204, 255);
+                logxy.BackColor = Color.FromArgb(153, 204, 255);
+                factorial.BackColor = Color.FromArgb(153, 204, 255);
+                pow.BackColor = Color.FromArgb(153, 204, 255);
+                displayEQ.BackColor = Color.FromArgb(204, 255, 255);
+                displayOP.BackColor = Color.FromArgb(204, 255, 255);
+                Mode.BackColor = Color.FromArgb(51, 255, 51);
             }
             else
             {
                 isModeOn = false;
                 Memulator.ActiveForm.BackgroundImage = null;
                 SoundPlayer sound2 = new SoundPlayer(Properties.Resources.normalmode);
-                sound2.Play();                
+                sound2.Play();
+                num0.BackColor = DefaultBackColor;
+                num1.BackColor = DefaultBackColor;
+                num2.BackColor = DefaultBackColor;
+                num3.BackColor = DefaultBackColor;
+                num4.BackColor = DefaultBackColor;
+                num5.BackColor = DefaultBackColor;
+                num6.BackColor = DefaultBackColor;
+                num7.BackColor = DefaultBackColor;
+                num8.BackColor = DefaultBackColor;
+                num9.BackColor = DefaultBackColor;
+                dot.BackColor = DefaultBackColor;
+                equals.BackColor = DefaultBackColor;
+                division.BackColor = DefaultBackColor;
+                multiply.BackColor = DefaultBackColor;
+                plus.BackColor = DefaultBackColor;
+                minus.BackColor = DefaultBackColor;
+                allclear.BackColor = DefaultBackColor;
+                del.BackColor = DefaultBackColor;
+                squareroot.BackColor = DefaultBackColor;
+                logxy.BackColor = DefaultBackColor;
+                factorial.BackColor = DefaultBackColor;
+                pow.BackColor = DefaultBackColor;
+                displayEQ.BackColor = DefaultBackColor;
+                displayOP.BackColor = DefaultBackColor;
+                Mode.BackColor = Color.FromArgb(255, 0, 0);
             }
+        }
+        
+        private void Mode_Click(object sender, EventArgs e)
+        {
+            checkMainMode();
         }
     }
 }
