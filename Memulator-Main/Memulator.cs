@@ -41,6 +41,7 @@ namespace Memulator_Main
             factorial.BackColor = DefaultBackColor;
             pow.BackColor = DefaultBackColor;
             exit.BackColor = DefaultBackColor;
+            plusMinus.BackColor = DefaultBackColor;
             Mode.BackColor = Color.FromArgb(255, 0, 0);
 
             displayOP.Text = "0"; // Default value            
@@ -760,6 +761,7 @@ namespace Memulator_Main
                 factorial.BackColor = Color.FromArgb(153, 204, 255);
                 pow.BackColor = Color.FromArgb(153, 204, 255);
                 exit.BackColor = Color.FromArgb(153, 204, 255);
+                plusMinus.BackColor = Color.FromArgb(220, 80, 90);
                 displayEQ.BackColor = Color.FromArgb(204, 255, 255);
                 displayOP.BackColor = Color.FromArgb(204, 255, 255);
                 Mode.BackColor = Color.FromArgb(51, 255, 51);
@@ -799,6 +801,7 @@ namespace Memulator_Main
                 displayEQ.BackColor = DefaultBackColor;
                 displayOP.BackColor = DefaultBackColor;
                 exit.BackColor = DefaultBackColor;
+                plusMinus.BackColor = DefaultBackColor;
                 Mode.BackColor = Color.FromArgb(255, 0, 0);
             }
         }
@@ -838,6 +841,12 @@ namespace Memulator_Main
                 return;
             }
             displayOP.Text += ",";
+        }
+
+        private void plusMinus_Click(object sender, EventArgs e)
+        {
+            double temp = double.Parse(displayOP.Text);
+            displayOP.Text = (-1 * temp).ToString();
         }
     }
 }
