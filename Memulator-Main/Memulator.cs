@@ -389,7 +389,13 @@ namespace Memulator_Main
                     memory = MemulatorHelper.Division(memory,y);
                     operation = "";
                     break;
+                case "":
+                    memory = double.Parse(displayOP.Text);
+                    displayEQ.Text = memory.ToString();
+                    displayOP.Text = "0";
+                    break;
                 default:
+
                     break;
             }
             if (isModeOn)
@@ -494,6 +500,13 @@ namespace Memulator_Main
             }
             if (operation == "sqrt")
             {
+                if (double.Parse(displayOP.Text) < 0)
+                {
+                    displayEQ.Text = "MATH ERROR!";
+                    displayOP.Text = "Press AC";
+                    error = true;
+                    return;
+                }
                 memory = MemulatorHelper.Sqrt(double.Parse(displayOP.Text));
                 displayEQ.Text = memory.ToString();
                 displayOP.Text = "0";
@@ -507,8 +520,10 @@ namespace Memulator_Main
                 memory = double.Parse(displayOP.Text);
             }
 
+            equalUsed = true;
+            memory = MemulatorHelper.Sqrt(double.Parse(displayOP.Text));
             displayEQ.Text = memory.ToString();
-            displayOP.Text = memory.ToString();
+            displayOP.Text = "0";
         }
 
         private void allclear_Click(object sender, EventArgs e)
@@ -626,6 +641,13 @@ namespace Memulator_Main
             }
             if (operation == "!")
             {
+                if (double.Parse(displayOP.Text) % 1 != 0)
+                {
+                    displayEQ.Text = "MATH ERROR!";
+                    displayOP.Text = "Press AC";
+                    error = true;
+                    return;
+                }
                 memory = MemulatorHelper.Factorial(long.Parse(displayOP.Text));
                 displayEQ.Text = memory.ToString();
                 displayOP.Text = "0";
@@ -639,8 +661,18 @@ namespace Memulator_Main
                 memory = double.Parse(displayOP.Text);
             }
 
+            if (double.Parse(displayOP.Text) % 1 != 0)
+            {
+                displayEQ.Text = "MATH ERROR!";
+                displayOP.Text = "Press AC";
+                error = true;
+                return;
+            }
+            equalUsed = true;
+            memory = MemulatorHelper.Factorial(long.Parse(displayOP.Text));
             displayEQ.Text = memory.ToString();
-            displayOP.Text = memory.ToString();
+            displayOP.Text = "0";
+            return;
         }
 
         private void logxy_Click(object sender, EventArgs e)
@@ -793,6 +825,19 @@ namespace Memulator_Main
             }
 
 
+        }
+
+        private void dot_Click(object sender, EventArgs e)
+        {
+            if (error)
+            {
+                return;
+            }
+            if (displayOP.Text.Contains(","))
+            {
+                return;
+            }
+            displayOP.Text += ",";
         }
     }
 }
