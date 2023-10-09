@@ -880,12 +880,6 @@ namespace Memulator_Main
                 pictureBox3.Visible = true;
                 pictureBox3.Refresh();
             }
-            DialogResult msg = MessageBox.Show("KAJAKRA KILÉPSZ?", "NEMAR MORE", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (msg.Equals(DialogResult.Yes))
-            {
-                Application.Exit();
-            }
-
 
         }
 
@@ -1028,7 +1022,7 @@ namespace Memulator_Main
             pizzaTime.Play();
             if (!taunt.Visible)
             {
-                DialogResult msg = MessageBox.Show("PIZZA TIME", "START PIZZA TIME?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult msg = MessageBox.Show("START PIZZA TIME?", "PIZZA TIME", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (msg.Equals(DialogResult.Yes))
                 {
                     taunt.Visible = true;
@@ -1042,7 +1036,7 @@ namespace Memulator_Main
             }
             else
             {
-                DialogResult msg = MessageBox.Show("PIZZA TIME", "END PIZZA TIME?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult msg = MessageBox.Show("END PIZZA TIME?", "PIZZA TIME", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (msg.Equals(DialogResult.Yes))
                 {
                     taunt.Visible = false;
