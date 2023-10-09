@@ -19,6 +19,8 @@ namespace Memulator_Main
         {
             InitializeComponent();
             pictureBox3.Visible = false;
+            pizzatime.Visible = false;
+            taunt.Visible = false;
             num0.BackColor = DefaultBackColor;
             num1.BackColor = DefaultBackColor;
             num2.BackColor = DefaultBackColor;
@@ -778,8 +780,9 @@ namespace Memulator_Main
         {
             if (!isModeOn)
             {
+                pizzatime.Visible = true;
                 button1.Visible = true;
-                taunt.Visible = true;
+                taunt.Visible = false;
                 pictureBox3.Visible = false;
                 isModeOn = true;
                 pictureBox1.Image = Properties.Resources.frogkicsi;
@@ -814,12 +817,14 @@ namespace Memulator_Main
                 exit.BackColor = Color.FromArgb(153, 204, 255);
                 plusMinus.BackColor = Color.FromArgb(220, 80, 90);
                 button1.BackColor = Color.FromArgb(255, 153, 255);
+                pizzatime.BackColor = Color.FromArgb(150, 250, 50);
                 displayEQ.BackColor = Color.FromArgb(204, 255, 255);
                 displayOP.BackColor = Color.FromArgb(204, 255, 255);
                 Mode.BackColor = Color.FromArgb(51, 255, 51);
             }
             else
             {
+                pizzatime.Visible = false;
                 taunt.Visible = false;
                 button1.Visible = false;
                 pictureBox3.Visible = false;
@@ -1025,6 +1030,32 @@ namespace Memulator_Main
                     tauntnumber = 1;
                     break;
             }
+        }
+
+        private void pizzatime_Click(object sender, EventArgs e)
+        {
+            SoundPlayer pizzaTime = new SoundPlayer(Properties.Resources.pizzatime);
+            pizzaTime.Play();
+            if (!taunt.Visible)
+            {
+                DialogResult msg = MessageBox.Show("PIZZA TIME", "START PIZZA TIME?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (msg.Equals(DialogResult.Yes))
+                {
+                    taunt.Visible = true;
+                    pizzaTime.Stop();
+                    
+                }
+            }
+            else
+            {
+                DialogResult msg = MessageBox.Show("PIZZA TIME", "END PIZZA TIME?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (msg.Equals(DialogResult.Yes))
+                {
+                    taunt.Visible = false;
+                    pizzaTime.Stop();
+                }
+            }
+
         }
     }
 }

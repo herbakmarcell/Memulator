@@ -63,6 +63,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pizzatime = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -459,11 +460,23 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Visible = false;
             // 
+            // pizzatime
+            // 
+            this.pizzatime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pizzatime.Location = new System.Drawing.Point(412, 303);
+            this.pizzatime.Name = "pizzatime";
+            this.pizzatime.Size = new System.Drawing.Size(29, 237);
+            this.pizzatime.TabIndex = 65;
+            this.pizzatime.Text = "p i z z a t  i me";
+            this.pizzatime.UseVisualStyleBackColor = true;
+            this.pizzatime.Click += new System.EventHandler(this.pizzatime_Click);
+            // 
             // Memulator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 567);
+            this.Controls.Add(this.pizzatime);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.taunt);
             this.Controls.Add(this.button1);
@@ -548,6 +561,7 @@
         private System.Windows.Forms.Button taunt;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button pizzatime;
     }
 }
 
