@@ -16,7 +16,7 @@
  ## Meme mód specifikus tesztelés
  | Teszteset               | Elvárt eredmény                                                                                                     | 
  |-------------------------|---------------------------------------------------------------------------------------------------------------------| 
- | Meme eredmények megjelenítése | A megadott eredményekhez tartozó kép és hanganyagok megjelenítése |
+ | Meme eredmények megjelenítése | A megadott eredményekhez tartozó kép és hanganyagok megjelenítése. |
  | Exit gomb megnyomása | A program nem lép ki, helyette képet és hangot játszik le. |
  | Kínai gomb megnyomása | Képet és hangot játszik le. | 
  | Pizza time gomb megnyomása | Felugró ablakot jelenít meg, amely ki be kapcsolja a "pizza time" módot és hangot játszik le. | 
@@ -40,3 +40,10 @@ Tesztelés dátuma: 2023.október.09.
 | Teszt #09 | All clear gomb megnyomása | A memória és műveleti állapot alaphelyzetbe állítása. | Művelet végrehajtódik. A program alaphelyzetbe kerül. | Nem találtam problémát. |
 | Teszt #10 | Del gomb megnyomása | Legutolsó bevitt karakter, törlésre kerül a szövegdobozból. Ha üres lenne, 0 kerül a szövegdobozba. | Művelet végrehajtódik. Legutolsó bevitt karakter, törlésre került a szövegdobozból. Amikor üres volt, 0 került a szövegdobozba. | Nem találtam problémát. | 
 | Teszt #11 | Mode gomb megnyomása | A program Meme módba kapcsol. A kinézete és eredmény megjelenítési funkciók megváztoznak. | Művelet végrehajtódik. A program Meme módba kapcsolt. A kinézete és eredmény megjelenítési funkciók megváztoztak. | Nem találtam problémát. |
+| Teszt #12 | Meme eredmények megjelenítése | A megadott eredményekhez tartozó kép és hanganyagok megjelenítése. | Műveletek végrehajtódnak. Az eredményekhez kapcsolódó média lejátszódik. | Nem találtam problémát. |
+| Teszt #13 | Exit gomb megnyomása | A program nem lép ki, helyette képet és hangot játszik le. | Művelet végrehajtódik. A média lejátszódott. | Nem találtam problémát. |
+| Teszt #14 | Kínai gomb megnyomása | Képet és hangot játszik le. | Művelet végrehajtódik. A média lejátszódott. | Nem találtam problémát. |
+| Teszt #15 | Pizza time gomb megnyomása | Felugró ablakot jelenít meg, amely ki-be kapcsolja a "pizza time" módot és hangot játszik le. | Művelet végrehajtódik. A felugró ablak működött, a hang lejátszódott, a pizza time módot ki-be tudja kapcsolni. | Nem találtam problémát. |
+| Teszt #16 | Pizza gomb megnyomása | Megállít minden folyamatot, majd képet és hangot játszik le. | Művelet végrehajtódik. Minden a szálon futó műveletet megállított és lejátszotta a kapcsolódó médiát. | Nem találtam problémát. |
+| Teszt #17 | Mode gomb megnyomása | A program Általános módba kapcsol. A kinézete és eredmény megjelenítési funkciók megváztoznak. | Művelet végrehajtódik. A program Általános módba kapcsolt. A kinézete és eredmény megjelenítési funkciók megváztoztak.  | Nem találtam problémát. |
+
