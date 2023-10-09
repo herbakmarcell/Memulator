@@ -921,7 +921,8 @@ namespace Memulator_Main
         private void taunt_Click(object sender, EventArgs e)
         {
 
-            tauntnumber += 1;
+            Random rnd = new Random();
+            tauntnumber = rnd.Next(1,10);
             taunt.Visible = true;
             SoundPlayer tauntSound = new SoundPlayer(Properties.Resources.taunt);
             switch (tauntnumber)
@@ -1018,17 +1019,6 @@ namespace Memulator_Main
                     Thread.Sleep(300);
                     pictureBox4.Visible = false;
                     break;
-                default:
-                    pictureBox4.Image = Properties.Resources.taunt1;
-                    pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-                    pictureBox4.Visible = true;
-                    pictureBox4.BringToFront();
-                    pictureBox4.Refresh();
-                    tauntSound.Play();
-                    Thread.Sleep(300);
-                    pictureBox4.Visible = false;
-                    tauntnumber = 1;
-                    break;
             }
         }
 
@@ -1045,6 +1035,10 @@ namespace Memulator_Main
                     pizzaTime.Stop();
                     
                 }
+                    else
+                {
+                    pizzaTime.Stop();
+                }
             }
             else
             {
@@ -1052,6 +1046,10 @@ namespace Memulator_Main
                 if (msg.Equals(DialogResult.Yes))
                 {
                     taunt.Visible = false;
+                    pizzaTime.Stop();
+                }
+                else
+                { 
                     pizzaTime.Stop();
                 }
             }
