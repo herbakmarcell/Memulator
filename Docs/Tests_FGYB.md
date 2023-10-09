@@ -2,13 +2,13 @@
  | Teszteset               | Elvárt eredmény                                                                                                     | 
  |-------------------------|---------------------------------------------------------------------------------------------------------------------| 
  | Szám gomb(0-9) megnyomása | Alsó szövegdobozba megjelenik a szám. |
- | Kéttagú művelet gomb megnyomása (+, -, *, /, pow) | Az alsó szövegdobozba lévő szám felülre kerül, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | 
- | Egytagú műveletek gomb megnyomása | Az alsó szövegdobozba lévő számra a művelet végrehajtódik, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | 
+ | Kéttagú művelet gomb megnyomása (+, -, *, /, pow) | Az alsó szövegdobozban lévő szám felülre kerül, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | 
+ | Egytagú műveletek gomb megnyomása | Az alsó szövegdobozban lévő számra a művelet végrehajtódik, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | 
  | Ismételt kéttagú műveletgomb megnyomása | A memória felülíródik a kívánt művelet végrehajtásával. | 
- | Eredmény kiíratása (=)| A műveleti állapotban a művelet végrehajtódik, ellenkező esetben  a memória az első bevitt szám lesz. |
+ | Eredmény kiíratása (=)| A műveleti állapotban a művelet végrehajtódik, ellenkező esetben a memória az első bevitt szám lesz. |
  | Negáló gomb (+/-) megnyomása | A szám ellentétes előtagú megfelelőjévé változik. |
- | Exit gomb megnyomása | A program kilép. |
- | Pont gomb megnyomása | A szövegdobozba megjelenik a pont karakter több nem jelenhet meg. |
+ | Exit gomb megnyomása | A program jóváhagyásra kilép. |
+ | Pont gomb megnyomása | A szövegdobozban megjelenik a pont karakter, több nem jelenhet meg. |
  | All clear gomb megnyomása | A memória és műveleti állapot alaphelyzetbe állítása. |
  | Del gomb megnyomása | Legutolsó bevitt karakter, eltűnik a szövegdobozbol. | 
  | Mode gomb megnyomása | A program Meme módba kapcsol. A kinézete és eredmény megjelenítési funkciók megváztoznak. Lásd Meme mód specifikus tesztelések. |
@@ -29,9 +29,12 @@ Tesztelő: Fodor Győző Benedek
 Tesztelés dátuma: 2023.október.09.
 | Tesztszám | Rövid leírás                     | Várt eredmény                                                                   | Eredmény                                                                       | Megjegyzés                |
 |-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
-| Teszt #01 | Szám gomb(0-9) megnyomása | Alsó szövegdobozba megjelenik a szám. | Művelet  végrehajtódik. Alsó szövegdobozba megjelent a szám. | Nem találtam problémát. |
-| Teszt #02 | Kéttagú művelet gomb megnyomása (+, -, *, /, pow) | Az alsó szövegdobozba lévő szám felülre kerül, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | Művelet  végrehajtódik. Felső szövegdobozba megjelent a szám. | Nem találtam problémát. |
-| Teszt #03 | Egytagú műveletek gomb megnyomása | Az alsó szövegdobozba lévő számra a művelet végrehajtódik, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | Művelet  végrehajtódik. Felső szövegdobozba megjelent a szám. | Nem találtam problémát. |
-| Teszt #04 | Ismételt kéttagú műveletgomb megnyomása | A memória felülíródik a kívánt művelet végrehajtásával. | Művelet  megváltozik. A következő alkalommal a kiválasztott művelet fut le. | Nem találtam problémát. |
-
+| Teszt #01 | Szám gomb(0-9) megnyomása | Alsó szövegdobozba megjelenik a szám. | Művelet végrehajtódik. Alsó szövegdobozban megjelent a szám. | Nem találtam problémát. |
+| Teszt #02 | Kéttagú művelet gomb megnyomása (+, -, *, /, pow) | Az alsó szövegdobozba lévő szám felülre kerül, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | Művelet végrehajtódik. Felső szövegdobozban megjelent a szám. | Nem találtam problémát. |
+| Teszt #03 | Egytagú műveletek gomb megnyomása | Az alsó szövegdobozba lévő számra a művelet végrehajtódik, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | Művelet végrehajtódik. Felső szövegdobozban megjelent a szám. | Nem találtam problémát. |
+| Teszt #04 | Ismételt kéttagú műveletgomb megnyomása | A memória felülíródik a kívánt művelet végrehajtásával. | Művelet megváltozik. A következő alkalommal a kiválasztott művelet fut le. | Nem találtam problémát. |
+| Teszt #05 | Eredmény kiíratása (=) |A műveleti állapotban a művelet végrehajtódik, ellenkező esetben a memória az első bevitt szám lesz. | Művelet  végrehajtódik. Felső szövegdobozban megjelent a szám. | Nem találtam problémát. |
+| Teszt #06 | Negáló gomb (+/-) megnyomása | Alsó szövegdobozban megjelenik/eltűnik az előjel. | Művelet végrehajtódik. Alsó szövegdobozban megjelent/eltűnt az előjel. | Nem találtam problémát. |
+| Teszt #07 | Exit gomb megnyomása | A program jóváhagyásra kilép. | Művelet végrehajtódik. A program kilépett. | Nem találtam problémát. |
+| Teszt #08 | Pont gomb megnyomása | A szövegdobozban megjelenik a pont karakter több nem jelenhet meg. | A szövegdobozban megjelent a pont karakter, több nem jelent meg. | Nem találtam problémát. |
 
