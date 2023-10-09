@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Threading;
 
 namespace Memulator_Main
 {
@@ -46,7 +47,7 @@ namespace Memulator_Main
 
             displayOP.Text = "0"; // Default value            
         }
-
+        int tauntnumber = 0;
         double memory = 0; // First argument and requirement for saving the 
         double y = 0; // Second argument (if needed)
         string operation = "";
@@ -914,14 +915,116 @@ namespace Memulator_Main
 
         private void taunt_Click(object sender, EventArgs e)
         {
-            Timer timer = new Timer();
-            timer.Interval = 500;
-            SoundPlayer taunt = new SoundPlayer(Properties.Resources.taunt);
-            pictureBox3.Image = Properties.Resources.peppino;
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.Visible = true;
-            pictureBox3.Refresh();
-            taunt.Play();
+
+            tauntnumber += 1;
+            taunt.Visible = true;
+            SoundPlayer tauntSound = new SoundPlayer(Properties.Resources.taunt);
+            switch (tauntnumber)
+            {
+                case 1:
+                    
+                    pictureBox4.Image = Properties.Resources.taunt1;
+                    pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pictureBox4.Visible = true;
+                    pictureBox4.BringToFront();
+                    pictureBox4.Refresh();
+                    tauntSound.Play();
+                    Thread.Sleep(300);
+                    pictureBox4.Visible = false;
+
+                    break;
+                case 2:
+                    pictureBox4.Image = Properties.Resources.taunt2;
+                    pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pictureBox4.Visible = true;
+                    pictureBox4.BringToFront();
+                    pictureBox4.Refresh();
+                    tauntSound.Play();
+                    Thread.Sleep(300);
+                    pictureBox4.Visible = false;
+                    break;
+                case 3:
+                    pictureBox4.Image = Properties.Resources.taunt3;
+                    pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pictureBox4.Visible = true;
+                    pictureBox4.BringToFront();
+                    pictureBox4.Refresh();
+                    tauntSound.Play();
+                    Thread.Sleep(300);
+                    pictureBox4.Visible = false;
+                    break;
+                case 4:
+                    pictureBox4.Image = Properties.Resources.taunt4;
+                    pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pictureBox4.Visible = true;
+                    pictureBox4.BringToFront();
+                    pictureBox4.Refresh();
+                    tauntSound.Play();
+                    Thread.Sleep(300);
+                    pictureBox4.Visible = false;
+                    break;
+                case 5:
+                    pictureBox4.Image = Properties.Resources.taunt5;
+                    pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pictureBox4.Visible = true;
+                    pictureBox4.BringToFront();
+                    pictureBox4.Refresh();
+                    tauntSound.Play();
+                    Thread.Sleep(300);
+                    pictureBox4.Visible = false;
+                    break;
+                case 6:
+                    pictureBox4.Image = Properties.Resources.taunt6;
+                    pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pictureBox4.Visible = true;
+                    pictureBox4.BringToFront();
+                    pictureBox4.Refresh();
+                    tauntSound.Play();
+                    Thread.Sleep(300);
+                    pictureBox4.Visible = false;
+                    break;
+                case 7:
+                    pictureBox4.Image = Properties.Resources.taunt7;
+                    pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pictureBox4.Visible = true;
+                    pictureBox4.BringToFront();
+                    pictureBox4.Refresh();
+                    tauntSound.Play();
+                    Thread.Sleep(300);
+                    pictureBox4.Visible = false;
+                    break;
+                case 8:
+                    pictureBox4.Image = Properties.Resources.taunt8;
+                    pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pictureBox4.Visible = true;
+                    pictureBox4.BringToFront();
+                    pictureBox4.Refresh();
+                    tauntSound.Play();
+                    Thread.Sleep(300);
+                    pictureBox4.Visible = false;
+                    break;
+                case 9:
+                    pictureBox4.Image = Properties.Resources.taunt9;
+                    pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pictureBox4.Visible = true;
+                    pictureBox4.BringToFront();
+                    pictureBox4.Refresh();
+                    tauntSound.Play();
+                    Thread.Sleep(300);
+                    pictureBox4.Visible = false;
+                    break;
+                default:
+                    pictureBox4.Image = Properties.Resources.taunt1;
+                    pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pictureBox4.Visible = true;
+                    pictureBox4.BringToFront();
+                    pictureBox4.Refresh();
+                    tauntSound.Play();
+                    Thread.Sleep(300);
+                    pictureBox4.Visible = false;
+                    tauntnumber = 1;
+                    break;
+            }
         }
     }
 }

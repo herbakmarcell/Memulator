@@ -301,16 +301,6 @@ namespace Memulator_Main.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap peppino {
-            get {
-                object obj = ResourceManager.GetObject("peppino", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap pizza {
             get {
                 object obj = ResourceManager.GetObject("pizza", resourceCulture);
@@ -371,6 +361,96 @@ namespace Memulator_Main.Properties {
         internal static System.IO.UnmanagedMemoryStream taunt {
             get {
                 return ResourceManager.GetStream("taunt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap taunt1 {
+            get {
+                object obj = ResourceManager.GetObject("taunt1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap taunt2 {
+            get {
+                object obj = ResourceManager.GetObject("taunt2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap taunt3 {
+            get {
+                object obj = ResourceManager.GetObject("taunt3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap taunt4 {
+            get {
+                object obj = ResourceManager.GetObject("taunt4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap taunt5 {
+            get {
+                object obj = ResourceManager.GetObject("taunt5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap taunt6 {
+            get {
+                object obj = ResourceManager.GetObject("taunt6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap taunt7 {
+            get {
+                object obj = ResourceManager.GetObject("taunt7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap taunt8 {
+            get {
+                object obj = ResourceManager.GetObject("taunt8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap taunt9 {
+            get {
+                object obj = ResourceManager.GetObject("taunt9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

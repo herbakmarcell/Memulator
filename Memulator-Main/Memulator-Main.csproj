@@ -197,5 +197,38 @@
   <ItemGroup>
     <None Include="sounds\taunt.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\taunt1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\taun2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\taunt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\taunt3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\taunt4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\taunt5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\taunt6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\taunt7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\taunt8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\taunt9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\taunt2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
