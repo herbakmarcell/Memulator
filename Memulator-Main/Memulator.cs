@@ -40,7 +40,7 @@ namespace Memulator_Main
             allclear.BackColor = DefaultBackColor;
             del.BackColor = DefaultBackColor;
             squareroot.BackColor = DefaultBackColor;
-            logxy.BackColor = DefaultBackColor;
+            //logxy.BackColor = DefaultBackColor;
             factorial.BackColor = DefaultBackColor;
             pow.BackColor = DefaultBackColor;
             exit.BackColor = DefaultBackColor;
@@ -250,58 +250,30 @@ namespace Memulator_Main
                 displayOP.Text = "0";
                 return;
             }
-            operation = "+";
 
-            if (!equalUsed)
+            if (operation == "")
             {
-                memory = double.Parse(displayOP.Text);
+                if (!equalUsed)
+                {
+                    operation = "+";
+                    memory = double.Parse(displayOP.Text);
+                    displayEQ.Text = memory.ToString();
+                    displayOP.Text = "0";
+                }
+                operation = "+";
+                y = double.Parse(displayOP.Text);
+                displayEQ.Text = memory.ToString();
+                displayOP.Text = "0";
             }
-            
-            displayEQ.Text = memory.ToString();
-            displayOP.Text = "0";
+            else
+            {
+                operation = "+";
+            }
 
-
-            // Saved for backtrack purposes
-            //// Ez kell minden művelet előtti tesztre
-            //if (subUsed && secondState)
-            //{
-            //    subUsed = false;
-            //    y = double.Parse(displayOP.Text);
-            //    memory = MemulatorHelper.Subtract(memory, y);
-            //    chars.Clear();
-            //    displayOP.Text = "0";
-            //    chars.Add("0");
-            //    displayEQ.Text = memory.ToString();
-            //}
-
-            //addUsed = true;
-            ////Amennyiben megcsináltad a többi műveletet, rakd itt false-ra
-            //if (!secondState)
-            //{
-            //    memory = double.Parse(displayOP.Text);
-            //    chars.Clear();
-            //    displayOP.Text = "0";
-            //    chars.Add("0");
-            //    displayEQ.Text = memory.ToString();
-            //    addUsed = true;
-            //    secondState = true;
-            //    return;
-            //}
-            //if (secondState)
-            //{
-            //    if (displayOP.Text == "")
-            //    {
-            //        return;
-            //    }
-            //    y = double.Parse(displayOP.Text);
-            //    memory = MemulatorHelper.Addition(memory, y);
-            //    chars.Clear();
-            //    displayOP.Text = "0";
-            //    chars.Add("0");
-            //    displayEQ.Text = memory.ToString();
-            //    return;
-            //}
-            
+            if (!equalUsed && operation == "+")
+            {
+                y = double.Parse(displayOP.Text);
+            }
         }
 
         private void minus_Click(object sender, EventArgs e)
@@ -318,15 +290,29 @@ namespace Memulator_Main
                 return;
             }
 
-            operation = "-";
-
-            if (!equalUsed)
+            if (operation == "")
             {
-                memory = double.Parse(displayOP.Text);
+                if (!equalUsed)
+                {
+                    operation = "-";
+                    memory = double.Parse(displayOP.Text);
+                    displayEQ.Text = memory.ToString();
+                    displayOP.Text = "0";
+                }
+                operation = "-";
+                y = double.Parse(displayOP.Text);
+                displayEQ.Text = memory.ToString();
+                displayOP.Text = "0";
+            }
+            else
+            {
+                operation = "-";
             }
 
-            displayEQ.Text = memory.ToString();
-            displayOP.Text = "0";
+            if (!equalUsed && operation == "-")
+            {
+                y = double.Parse(displayOP.Text);
+            }
         }
 
         // Verzió 0.5 - Marci - Működő összeadás
@@ -605,6 +591,13 @@ namespace Memulator_Main
             }
             if (operation == "*")
             {
+                if (memory == 0)
+                {
+                    displayEQ.Text = "MEMORY IS 0!";
+                    displayOP.Text = "Press AC";
+                    error = true;
+                    return;
+                }
                 memory = MemulatorHelper.Multiply(memory, double.Parse(displayOP.Text));
                 displayEQ.Text = memory.ToString();
                 displayOP.Text = "0";
@@ -811,7 +804,7 @@ namespace Memulator_Main
                 allclear.BackColor = Color.FromArgb(153, 204, 255);
                 del.BackColor = Color.FromArgb(153, 204, 255);
                 squareroot.BackColor = Color.FromArgb(153, 204, 255);
-                logxy.BackColor = Color.FromArgb(153, 204, 255);
+                //logxy.BackColor = Color.FromArgb(153, 204, 255);
                 factorial.BackColor = Color.FromArgb(153, 204, 255);
                 pow.BackColor = Color.FromArgb(153, 204, 255);
                 exit.BackColor = Color.FromArgb(153, 204, 255);
@@ -854,7 +847,7 @@ namespace Memulator_Main
                 allclear.BackColor = DefaultBackColor;
                 del.BackColor = DefaultBackColor;
                 squareroot.BackColor = DefaultBackColor;
-                logxy.BackColor = DefaultBackColor;
+                //logxy.BackColor = DefaultBackColor;
                 factorial.BackColor = DefaultBackColor;
                 pow.BackColor = DefaultBackColor;
                 displayEQ.BackColor = DefaultBackColor;
