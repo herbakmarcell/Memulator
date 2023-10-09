@@ -880,6 +880,14 @@ namespace Memulator_Main
                 pictureBox3.Visible = true;
                 pictureBox3.Refresh();
             }
+            else
+            {
+                DialogResult msg = MessageBox.Show("Bezárja a programot?", "Kilépés", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (msg.Equals(DialogResult.Yes))
+                {
+                    Application.Exit();
+                }
+            }
 
         }
 
