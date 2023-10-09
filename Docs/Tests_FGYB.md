@@ -10,7 +10,7 @@
  | Exit gomb megnyomása | A program jóváhagyásra kilép. |
  | Pont gomb megnyomása | A szövegdobozban megjelenik a pont karakter, több nem jelenhet meg. |
  | All clear gomb megnyomása | A memória és műveleti állapot alaphelyzetbe állítása. |
- | Del gomb megnyomása | Legutolsó bevitt karakter, eltűnik a szövegdobozbol. | 
+ | Del gomb megnyomása | Legutolsó bevitt karakter, törlésre kerül a szövegdobozból. Ha üres lenne, 0 kerül a szövegdobozba. | 
  | Mode gomb megnyomása | A program Meme módba kapcsol. A kinézete és eredmény megjelenítési funkciók megváztoznak. Lásd Meme mód specifikus tesztelések. |
 
  ## Meme mód specifikus tesztelés
@@ -33,8 +33,10 @@ Tesztelés dátuma: 2023.október.09.
 | Teszt #02 | Kéttagú művelet gomb megnyomása (+, -, *, /, pow) | Az alsó szövegdobozba lévő szám felülre kerül, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | Művelet végrehajtódik. Felső szövegdobozban megjelent a szám. | Nem találtam problémát. |
 | Teszt #03 | Egytagú műveletek gomb megnyomása | Az alsó szövegdobozba lévő számra a művelet végrehajtódik, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | Művelet végrehajtódik. Felső szövegdobozban megjelent a szám. | Nem találtam problémát. |
 | Teszt #04 | Ismételt kéttagú műveletgomb megnyomása | A memória felülíródik a kívánt művelet végrehajtásával. | Művelet megváltozik. A következő alkalommal a kiválasztott művelet fut le. | Nem találtam problémát. |
-| Teszt #05 | Eredmény kiíratása (=) |A műveleti állapotban a művelet végrehajtódik, ellenkező esetben a memória az első bevitt szám lesz. | Művelet  végrehajtódik. Felső szövegdobozban megjelent a szám. | Nem találtam problémát. |
+| Teszt #05 | Eredmény kiíratása (=) |A műveleti állapotban a művelet végrehajtódik, ellenkező esetben a memória az első bevitt szám lesz. | Művelet  végrehajtódik. Felső szövegdobozban megjelent a szám. | Nem követi a művelet végrehajtást! Prioritás: alacsony |
 | Teszt #06 | Negáló gomb (+/-) megnyomása | Alsó szövegdobozban megjelenik/eltűnik az előjel. | Művelet végrehajtódik. Alsó szövegdobozban megjelent/eltűnt az előjel. | Nem találtam problémát. |
 | Teszt #07 | Exit gomb megnyomása | A program jóváhagyásra kilép. | Művelet végrehajtódik. A program kilépett. | Nem találtam problémát. |
 | Teszt #08 | Pont gomb megnyomása | A szövegdobozban megjelenik a pont karakter több nem jelenhet meg. | A szövegdobozban megjelent a pont karakter, több nem jelent meg. | Nem találtam problémát. |
-
+| Teszt #09 | All clear gomb megnyomása | A memória és műveleti állapot alaphelyzetbe állítása. | Művelet végrehajtódik. A program alaphelyzetbe kerül. | Nem találtam problémát. |
+| Teszt #10 | Del gomb megnyomása | Legutolsó bevitt karakter, törlésre kerül a szövegdobozból. Ha üres lenne, 0 kerül a szövegdobozba. | Művelet végrehajtódik. Legutolsó bevitt karakter, törlésre került a szövegdobozból. Amikor üres volt, 0 került a szövegdobozba. | Nem találtam problémát. | 
+| Teszt #11 | Mode gomb megnyomása | A program Meme módba kapcsol. A kinézete és eredmény megjelenítési funkciók megváztoznak. | Művelet végrehajtódik. A program Meme módba kapcsolt. A kinézete és eredmény megjelenítési funkciók megváztoztak. | Nem találtam problémát. |
