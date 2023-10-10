@@ -30,5 +30,7 @@ Tesztelés dátuma: 2023.október.10.
 
 | Tesztszám | Rövid leírás                     | Várt eredmény                                                                   | Eredmény                                                                       | Megjegyzés                |
 |-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
-
+| Teszt #01 | Szám gomb (0-9) megnyomása | Alsó szövegdobozban megjelenik a szám/megjelennek a számok. | Gombok műveletei sikeresen lefutnak, és megjelennek az alsó  szövegdobozban. Az alap 0 szám átíródik, kivétel a nulla megnyomásakor  | Nem találtam problémát. |
+| Teszt #02 | Kéttagú művelet gomb megnyomása (+, -, *, /, pow) | Az alsó szövegdobozban lévő szám/számok felülre kerülnek, el lesz tárolva a memóriában és műveleti állapotba kerül a program. | Gombok műveletei sikeresen lefutnak, Felső szövegdobozban megjelent a szám/megjelentek a számok. | Nem találtam problémát. |
+| Teszt #03 | Egytagú műveletek gomb megnyomása | Az alsó szövegdobozban lévő számra a művelet végrehajtódik, el lesz tárolva a memóriában és műveleti állapotba kerül a program. | Művelet végrehajtódik. Felső szövegdobozban megjelent a szám/megjelentek a számok. | Nem találtam problémát. |
 
