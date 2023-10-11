@@ -1,7 +1,7 @@
 ## Általános mód tesztelés
  | Teszteset               | Elvárt eredmény                                                                                                     | 
  |-------------------------|---------------------------------------------------------------------------------------------------------------------| 
- | Szám gomb(0-9) megnyomása | Alsó szövegdobozba megjelenik a szám. |
+ | Szám gomb(0-9) megnyomása | Alsó szövegdobozban megjelenik a szám. |
  | Kéttagú művelet gomb megnyomása (+, -, *, /, pow) | Az alsó szövegdobozban lévő szám felülre kerül, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | 
  | Egytagú műveletek gomb megnyomása | Az alsó szövegdobozban lévő számra a művelet végrehajtódik, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | 
  | Ismételt kéttagú műveletgomb megnyomása | A memória felülíródik a kívánt művelet végrehajtásával. | 
