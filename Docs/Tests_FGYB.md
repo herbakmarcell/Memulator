@@ -1,7 +1,7 @@
 ## Általános mód tesztelés
  | Teszteset               | Elvárt eredmény                                                                                                     | 
  |-------------------------|---------------------------------------------------------------------------------------------------------------------| 
- | Szám gomb(0-9) megnyomása | Alsó szövegdobozba megjelenik a szám. |
+ | Szám gomb(0-9) megnyomása | Alsó szövegdobozban megjelenik a szám. |
  | Kéttagú művelet gomb megnyomása (+, -, *, /, pow) | Az alsó szövegdobozban lévő szám felülre kerül, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | 
  | Egytagú műveletek gomb megnyomása | Az alsó szövegdobozban lévő számra a művelet végrehajtódik, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | 
  | Ismételt kéttagú műveletgomb megnyomása | A memória felülíródik a kívánt művelet végrehajtásával. | 
@@ -29,7 +29,7 @@ Tesztelő: Fodor Győző Benedek
 Tesztelés dátuma: 2023.október.09.
 | Tesztszám | Rövid leírás                     | Várt eredmény                                                                   | Eredmény                                                                       | Megjegyzés                |
 |-----------|----------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------|
-| Teszt #01 | Szám gomb(0-9) megnyomása | Alsó szövegdobozba megjelenik a szám. | Művelet végrehajtódik. Alsó szövegdobozban megjelent a szám. | Nem találtam problémát. |
+| Teszt #01 | Szám gomb(0-9) megnyomása | Alsó szövegdobozban megjelenik a szám. | Művelet végrehajtódik. Alsó szövegdobozban megjelent a szám. | Nem találtam problémát. |
 | Teszt #02 | Kéttagú művelet gomb megnyomása (+, -, *, /, pow) | Az alsó szövegdobozba lévő szám felülre kerül, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | Művelet végrehajtódik. Felső szövegdobozban megjelent a szám. | Nem találtam problémát. |
 | Teszt #03 | Egytagú műveletek gomb megnyomása | Az alsó szövegdobozba lévő számra a művelet végrehajtódik, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | Művelet végrehajtódik. Felső szövegdobozban megjelent a szám. | Nem találtam problémát. |
 | Teszt #04 | Ismételt kéttagú műveletgomb megnyomása | A memória felülíródik a kívánt művelet végrehajtásával. | Művelet megváltozik. A következő alkalommal a kiválasztott művelet fut le. | Nem találtam problémát. |
@@ -39,7 +39,7 @@ Tesztelés dátuma: 2023.október.09.
 | Teszt #08 | Pont gomb megnyomása | A szövegdobozban megjelenik a pont karakter több nem jelenhet meg. | A szövegdobozban megjelent a pont karakter, több nem jelent meg. | Nem találtam problémát. |
 | Teszt #09 | All clear gomb megnyomása | A memória és műveleti állapot alaphelyzetbe állítása. | Művelet végrehajtódik. A program alaphelyzetbe kerül. | Nem találtam problémát. |
 | Teszt #10 | Del gomb megnyomása | Legutolsó bevitt karakter, törlésre kerül a szövegdobozból. Ha üres lenne, 0 kerül a szövegdobozba. | Művelet végrehajtódik. Legutolsó bevitt karakter, törlésre került a szövegdobozból. Amikor üres volt, 0 került a szövegdobozba. | Nem találtam problémát. | 
-| Teszt #11 | Mode gomb megnyomása | A program Meme módba kapcsol. A kinézete és eredmény megjelenítési funkciók megváztoznak. | Művelet végrehajtódik. A program Meme módba kapcsolt. A kinézete és eredmény megjelenítési funkciók megváztoztak. | Nem találtam problémát. |
+| Teszt #11 | Mode gomb megnyomása | A program Meme módba kapcsol. A kinézete és eredmény megjelenítési funkciók megváltoznak. | Művelet végrehajtódik. A program Meme módba kapcsolt. A kinézete és eredmény megjelenítési funkciók megváztoztak. | Nem találtam problémát. |
 | Teszt #12 | Meme eredmények megjelenítése | A megadott eredményekhez tartozó kép és hanganyagok megjelenítése. | Műveletek végrehajtódnak. Az eredményekhez kapcsolódó média lejátszódik. | Nem találtam problémát. |
 | Teszt #13 | Exit gomb megnyomása | A program nem lép ki, helyette képet és hangot játszik le. | Művelet végrehajtódik. A média lejátszódott. | Nem találtam problémát. |
 | Teszt #14 | Kínai gomb megnyomása | Képet és hangot játszik le. | Művelet végrehajtódik. A média lejátszódott. | Nem találtam problémát. |
