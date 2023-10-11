@@ -33,7 +33,7 @@ Tesztelés dátuma: 2023. október. 09. 21:30
 | Teszt #02 | Kéttagú művelet gomb megnyomása (+, -, *, /, pow) | Az alsó szövegdobozba lévő szám felülre kerül, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | Művelet  végrehajtódik. Felső szövegdobozba megjelent a szám. | Nem találtam problémát. |
 | Teszt #03 | Egytagú műveletek gomb megnyomása | Az alsó szövegdobozba lévő számra a művelet végrehajtódik, el lesz tárolva a memóriába és műveleti állapotba kerül a program. | Művelet  végrehajtódik. Felső szövegdobozba megjelent a szám. | Nem találtam problémát. |
 | Teszt #04 | Ismételt kéttagú műveletgomb megnyomása | A memória felülíródik a kívánt művelet végrehajtásával. | Művelet  megváltozik. A következő alkalommal a kiválasztott művelet fut le. | Nem találtam problémát. |
-| Teszt #05 | Eredmény kiíratása (=) | A műveleti állapotban a művelet végrehajtódik, ellenkező esetben  a memória az első bevitt szám lesz. | Alsó szövegdobozba megjelent a szám. | Nem találtam problémát. |
+| Teszt #05 | Eredmény kiíratása (=) | A műveleti állapotban a művelet végrehajtódik, ellenkező esetben  a memória az első bevitt szám lesz. | Felső szövegdobozba megjelent a szám. | Nem találtam problémát. |
 | Teszt #06 | Negáló gomb (+/-) megnyomása | A szám ellentétes előtagú megfelelőjévé változik. | A szám előtt megjelent a '-'. | Nem követi a művelet végrehajtást! Prioritás: alacsony |
 | Teszt #07 | Exit gomb megnyomása | A program jóváhagyásra kilép. | A program jóváhagyásra kilépett. | Nem találtam problémát. |
 | Teszt #08 | Pont gomb megnyomása |A szövegdobozba megjelenik a pont karakter több nem jelenhet meg. | A pont megjelent, több pont bevitel nem történhetett. | Nem találtam problémát. |
